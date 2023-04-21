@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+html,
+body {
+  margin: 0;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+html,
+body,
+* {
+  box-sizing: border-box;
+}
+
+// FONT
+@font-face {
+  font-family: "gothic";
+  src: url("./assets/fonts/gothic/CenturyGothic.ttf") format("truetype");
+}
+
+.gothic {
+  font-family: 'gothic', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

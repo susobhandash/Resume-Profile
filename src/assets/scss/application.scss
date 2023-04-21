@@ -1,0 +1,160 @@
+
+// Mixins
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}
+
+// ------------------------------------------------------ Display Utilities ------------------------------------------------------
+.d-f {
+  display: flex;
+}
+.d-i-f {
+  display: inline-flex;
+}
+.d-b {
+  display: block;
+}
+.d-i-b {
+  display: inline-block;
+}
+.d-i {
+  display: inline;
+}
+
+// ------------------------------------------------------ Position Utilities ------------------------------------------------------
+.p-a {
+  position: absolute;
+}
+.p-f {
+  position: fixed;
+}
+.p-r {
+  position: relative;
+}
+.p-stk {
+  position: sticky;
+}
+.p-s {
+  position: static;
+}
+
+// ------------------------------------------------------ Spacing Utilities - Padding ------------------------------------------------------
+.p-md {
+  padding: 1em;
+}
+.p-lg {
+  padding: 2em;
+}
+.p-sm {
+  padding: 0.5em;
+}
+
+.pl-md {
+  padding-left: 1em;
+}
+.pl-lg {
+  padding-left: 2em;
+}
+.pl-sm {
+  padding-left: 0.5em;
+}
+
+.pr-md {
+  padding-right: 1em;
+}
+.pr-lg {
+  padding-right: 2em;
+}
+.pr-sm {
+  padding-right: 0.5em;
+}
+
+.pt-md {
+  padding-top: 1em;
+}
+.pt-lg {
+  padding-top: 2em;
+}
+.pt-sm {
+  padding-top: 0.5em;
+}
+
+.pb-md {
+  padding-bottom: 1em;
+}
+.pb-lg {
+  padding-bottom: 2em;
+}
+.pb-sm {
+  padding-bottom: 0.5em;
+}
+
+// ------------------------------------------------------ Spacing Utilities - Margin ------------------------------------------------------
+
+.m-md {
+  margin: 1em;
+}
+.m-lg {
+  margin: 2em;
+}
+.m-sm {
+  margin: 0.5em;
+}
+
+.ml-md {
+  margin-left: 1em;
+}
+.ml-lg {
+  margin-left: 2em;
+}
+.ml-sm {
+  margin-left: 0.5em;
+}
+
+.mr-md {
+  margin-right: 1em;
+}
+.mr-lg {
+  margin-right: 2em;
+}
+.mr-sm {
+  margin-right: 0.5em;
+}
+
+.mt-md {
+  margin-top: 1em;
+}
+.mt-lg {
+  margin-top: 2em;
+}
+.mt-sm {
+  margin-top: 0.5em;
+}
+
+.mb-md {
+  margin-bottom: 1em;
+}
+.mb-lg {
+  margin-bottom: 2em;
+}
+.mb-sm {
+  margin-bottom: 0.5em;
+}
+
+
+// ------------------------------------------------------ Border ------------------------------------------------------
+.br-5 {
+  @include border-radius(5px);
+}
+.br-12 {
+  @include border-radius(12px);
+}
+
+// ------------------------------------------------------ Shapes ------------------------------------------------------
+.circle {
+  @include border-radius(50%);
+}
+
+.cards {
+  @include border-radius(15px);
+}
