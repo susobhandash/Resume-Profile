@@ -29,6 +29,9 @@
             ],
             "styles": [
               "src/assets/fontawesome/css/all.css",
+              "src/assets/scss/mixins.scss",
+              "src/assets/scss/util.scss",
+              "src/assets/scss/application.scss",
               "src/styles.scss"
             ],
             "scripts": []
