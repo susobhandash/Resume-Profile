@@ -1,249 +1,324 @@
-@use 'mixins';
+@use "mixins";
 
 // ------------------------------------------------------ Display Utilities ------------------------------------------------------
 .d-f {
-    display: flex;
+  display: flex;
 }
 
 .d-i-f {
-    display: inline-flex;
+  display: inline-flex;
 }
 
 .d-b {
-    display: block;
+  display: block;
 }
 
 .d-i-b {
-    display: inline-block;
+  display: inline-block;
 }
 
 .d-i {
-    display: inline;
+  display: inline;
 }
 
 // ------------------------------------------------------ Position Utilities ------------------------------------------------------
 .p-a {
-    position: absolute;
+  position: absolute;
 }
 
 .p-f {
-    position: fixed;
+  position: fixed;
 }
 
 .p-r {
-    position: relative;
+  position: relative;
 }
 
 .p-stk {
-    position: sticky;
+  position: sticky;
 }
 
 .p-s {
-    position: static;
+  position: static;
 }
 
 // ------------------------------------------------------ Spacing Utilities - Padding ------------------------------------------------------
 .p-md {
-    padding: 1em;
+  padding: 1em;
 }
 
 .p-lg {
-    padding: 2em;
+  padding: 2em;
 }
 
 .p-sm {
-    padding: 0.5em;
+  padding: 0.5em;
+}
+
+.p-0 {
+  padding: 0;
 }
 
 .pl-md {
-    padding-left: 1em;
+  padding-left: 1em;
 }
 
 .pl-lg {
-    padding-left: 2em;
+  padding-left: 2em;
 }
 
 .pl-sm {
-    padding-left: 0.5em;
+  padding-left: 0.5em;
+}
+
+.pl-0 {
+  padding-left: 0;
 }
 
 .pr-md {
-    padding-right: 1em;
+  padding-right: 1em;
 }
 
 .pr-lg {
-    padding-right: 2em;
+  padding-right: 2em;
 }
 
 .pr-sm {
-    padding-right: 0.5em;
+  padding-right: 0.5em;
+}
+
+.pr-0 {
+  padding-right: 0;
 }
 
 .pt-md {
-    padding-top: 1em;
+  padding-top: 1em;
 }
 
 .pt-lg {
-    padding-top: 2em;
+  padding-top: 2em;
 }
 
 .pt-sm {
-    padding-top: 0.5em;
+  padding-top: 0.5em;
+}
+
+.pt-0 {
+  padding-top: 0;
 }
 
 .pb-md {
-    padding-bottom: 1em;
+  padding-bottom: 1em;
 }
 
 .pb-lg {
-    padding-bottom: 2em;
+  padding-bottom: 2em;
 }
 
 .pb-sm {
-    padding-bottom: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.pb-0 {
+  padding-bottom: 0;
 }
 
 // ------------------------------------------------------ Spacing Utilities - Margin ------------------------------------------------------
 
 .m-md {
-    margin: 1em;
+  margin: 1em;
 }
 
 .m-lg {
-    margin: 2em;
+  margin: 2em;
 }
 
 .m-sm {
-    margin: 0.5em;
+  margin: 0.5em;
+}
+
+.m-0 {
+  margin: 0;
 }
 
 .ml-md {
-    margin-left: 1em;
+  margin-left: 1em;
 }
 
 .ml-lg {
-    margin-left: 2em;
+  margin-left: 2em;
 }
 
 .ml-sm {
-    margin-left: 0.5em;
+  margin-left: 0.5em;
+}
+
+.ml-0 {
+  margin-left: 0;
 }
 
 .mr-md {
-    margin-right: 1em;
+  margin-right: 1em;
 }
 
 .mr-lg {
-    margin-right: 2em;
+  margin-right: 2em;
 }
 
 .mr-sm {
-    margin-right: 0.5em;
+  margin-right: 0.5em;
+}
+
+.mr-0 {
+  margin-right: 0;
 }
 
 .mt-md {
-    margin-top: 1em;
+  margin-top: 1em;
 }
 
 .mt-lg {
-    margin-top: 2em;
+  margin-top: 2em;
 }
 
 .mt-sm {
-    margin-top: 0.5em;
+  margin-top: 0.5em;
+}
+
+.mt-0 {
+  margin-top: 0;
 }
 
 .mb-md {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 .mb-lg {
-    margin-bottom: 2em;
+  margin-bottom: 2em;
 }
 
 .mb-sm {
-    margin-bottom: 0.5em;
+  margin-bottom: 0.5em;
 }
 
+.mb-0 {
+  margin-bottom: 0;
+}
 
 // ------------------------------------------------------ Border ------------------------------------------------------
 .br-5 {
-    @include mixins.border-radius(5px);
+  @include mixins.border-radius(5px);
 }
 
 .br-12 {
-    @include mixins.border-radius(12px);
+  @include mixins.border-radius(12px);
 }
 
 .br-20 {
-    @include mixins.border-radius(20px);
+  @include mixins.border-radius(20px);
 }
 
 // ------------------------------------------------------ Shapes ------------------------------------------------------
 .circle {
-    @include mixins.border-radius(50%);
+  @include mixins.border-radius(50%);
 }
 
 .cards {
-    @include mixins.border-radius(15px);
+  @include mixins.border-radius(15px);
 }
 
 // ------------------------------------------------------ Alignment ------------------------------------------------------
 .left {
-    text-align     : left;
-    justify-content: flex-start;
+  text-align: left;
+  justify-content: flex-start;
 }
 
 .right {
-    text-align     : right;
-    justify-content: flex-end;
+  text-align: right;
+  justify-content: flex-end;
 }
 
 .center {
-    text-align: center;
+  text-align: center;
 }
 
 .justify-between {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .justify-around {
-    justify-content: space-around;
+  justify-content: space-around;
 }
 
 .justify-evenly {
-    justify-content: space-evenly;
+  justify-content: space-evenly;
 }
 
 // ------------------------------------------------------ Fonts ------------------------------------------------------
 body {
-    font-size: 1rem;
+  font-size: 1rem;
+  line-height: 1rem;
 }
 
 h1 {
-    font-size: 2.168rem;
-    margin: 0;
+  font-size: 2.168rem;
+  line-height: 2.168rem;
+  margin: 0;
 }
 
 h2 {
-    font-size: 1.168rem;
-    margin: 0;
+  font-size: 1.168rem;
+  line-height: 1.168rem;
+  margin: 0;
 }
 
 h3 {
-    font-size: 1rem;
-    margin: 0;
+  font-size: 1rem;
+  line-height: 1rem;
+  margin: 0;
 }
 
 // ------------------------------------------------------ Colors ------------------------------------------------------
 .text-primary {
-    color: var(--primaryColor);
+  color: var(--primaryColor);
 }
 .text-primary-lt {
-    color: var(--primaryColorLt);
+  color: var(--primaryColorLt);
 }
 
 // ------------------------------------------------------ Font Weight ------------------------------------------------------
 .fw-500 {
-    font-weight: 500;
+  font-weight: 500;
+}
+.text-lg {
+  font-size: 1.5em;
+  line-height: 1.6em;
+}
+.text-md {
+  font-size: 1.25em;
+  line-height: 1.3em;
+}
+.text-sm {
+  font-size: 0.8em;
+  line-height: 0.85em;
+}
+
+// ------------------------------------------------------ Scroll ------------------------------------------------------
+.o-auto {
+  overflow: auto;
+}
+*::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+
+*::-webkit-scrollbar-corner,
+*::-webkit-scrollbar-track {
+  background-color: #69707d0d;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #69707d4d;
+  border: 6px solid transparent;
+  background-clip: content-box;
 }

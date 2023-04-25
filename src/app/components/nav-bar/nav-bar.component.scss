@@ -1,0 +1,39 @@
+.nav-bar {
+  background: var(--primaryBg);
+  font-size: 14px;
+  color: var(--primaryColorLt);
+
+  .nav-bar-item {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    font-size: 16px;
+    position: relative;
+    cursor: pointer;
+    transition: all linear 0.2s;
+
+    &:hover {
+      color: var(--primaryColor);
+    }
+
+    > .fas {
+      display: inline-block;
+      width: 20px;
+    }
+
+    &.active {
+      font-weight: 500;
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 20px;
+        top: 10px;
+        width: 4px;
+        left: calc(-2em + 4px);
+        border-radius: 2px;
+        background-color: var(--primaryColor);
+      }
+    }
+  }
+}

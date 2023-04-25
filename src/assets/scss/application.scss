@@ -21,9 +21,16 @@
         height: calc(100vh - 4rem - 6em);
       }
 
+      .detail-panel .scroll-section {
+        height: calc(100vh - 4rem - 6em - 2.168rem);
+        overflow: auto;
+      }
+
       .side-panel {
         width: 200px;
+        min-width: 200px;
         padding: 0.5em 1em;
+        padding-left: 0;
         border-right: 2px solid var(--lightBorder);
       }
     }
