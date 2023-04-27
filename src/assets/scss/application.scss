@@ -4,15 +4,15 @@
 
 .container {
   background-color: var(--primaryBg);
-  height: calc(100vh - 4rem);
+  height          : calc(100vh - 4rem);
   @include mixins.border-radius(25px);
 
   .page-content {
     display: flex;
 
     .left-section {
-      display: flex;
-      width: 66.66%;
+      display         : flex;
+      width           : 66.66%;
       background-color: var(--secondaryBg);
       @include mixins.border-radius(25px);
 
@@ -22,14 +22,14 @@
       }
 
       .detail-panel .scroll-section {
-        height: calc(100vh - 4rem - 6em - 2.168rem);
+        height  : calc(100vh - 4rem - 6em - 2.168rem);
         overflow: auto;
       }
 
       .side-panel {
-        width: 200px;
-        min-width: 200px;
-        padding: 0.5em 1em;
+        width       : 200px;
+        min-width   : 200px;
+        padding     : 0.5em 1em;
         padding-left: 0;
         border-right: 2px solid var(--lightBorder);
       }
@@ -42,6 +42,22 @@
 }
 
 .profile-picture {
-  height: 120px;
-  width: 120px;
+  display   : inline-block;
+  height    : 120px;
+  width     : 120px;
+  transition: transform linear 0.2s;
+  background-image: url('../images/avatar.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.project-sticky-header {
+  position  : sticky;
+  z-index   : 1;
+  top       : 0px;
+  background: var(--secondaryBg);
 }

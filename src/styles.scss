@@ -11,7 +11,9 @@ body {
   background: linear-gradient(135deg, rgba(255, 205, 170, 1) 0%, rgba(235, 188, 254, 1) 100%);
   height: calc(100vh);
   width: calc(100vw);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  // font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 html,
@@ -45,4 +47,8 @@ body,
 
 .gothic {
   font-family: 'gothic', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.poppins {
+  font-family: 'Poppins', sans-serif;
 }

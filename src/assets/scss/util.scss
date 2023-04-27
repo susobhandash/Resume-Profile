@@ -229,17 +229,21 @@
 
 // ------------------------------------------------------ Alignment ------------------------------------------------------
 .left {
-  text-align: left;
+  text-align     : left;
   justify-content: flex-start;
 }
 
 .right {
-  text-align: right;
+  text-align     : right;
   justify-content: flex-end;
 }
 
 .center {
   text-align: center;
+}
+
+.ta-justify {
+  text-align: justify;
 }
 
 .justify-between {
@@ -256,59 +260,81 @@
 
 // ------------------------------------------------------ Fonts ------------------------------------------------------
 body {
-  font-size: 1rem;
-  line-height: 1rem;
+  font-size          : 0.9rem;
+  line-height        : 1.25rem;
+  font-family        : 'Poppins', sans-serif;
+  font-style         : normal;
+  font-stretch       : normal;
+  font-optical-sizing: none;
 }
 
 h1 {
-  font-size: 2.168rem;
+  font-size  : 2.168rem;
   line-height: 2.168rem;
-  margin: 0;
+  margin     : 0;
+  font-weight: 400;
+  font-family: 'gothic', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 h2 {
-  font-size: 1.168rem;
+  font-size  : 1.168rem;
   line-height: 1.168rem;
-  margin: 0;
+  margin     : 0;
+  font-weight: 400;
+  font-family: 'gothic', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 h3 {
-  font-size: 1rem;
+  font-size  : 1rem;
   line-height: 1rem;
-  margin: 0;
+  margin     : 0;
+  font-family: 'gothic', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 // ------------------------------------------------------ Colors ------------------------------------------------------
 .text-primary {
   color: var(--primaryColor);
 }
+
 .text-primary-lt {
   color: var(--primaryColorLt);
 }
 
 // ------------------------------------------------------ Font Weight ------------------------------------------------------
-.fw-500 {
-  font-weight: 500;
+.fw-200 {
+  font-weight: 200;
 }
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
 .text-lg {
-  font-size: 1.5em;
-  line-height: 1.6em;
+  font-size  : 1.5rem;
+  line-height: 1.6rem;
 }
+
 .text-md {
-  font-size: 1.25em;
-  line-height: 1.3em;
+  font-size  : 0.9rem;
+  line-height: 1.25rem;
 }
+
 .text-sm {
-  font-size: 0.8em;
-  line-height: 0.85em;
+  font-size  : 0.8rem;
+  line-height: 0.85rem;
 }
 
 // ------------------------------------------------------ Scroll ------------------------------------------------------
 .o-auto {
   overflow: auto;
 }
+
 *::-webkit-scrollbar {
-  width: 16px;
+  width : 16px;
   height: 16px;
 }
 
@@ -319,6 +345,11 @@ h3 {
 
 *::-webkit-scrollbar-thumb {
   background-color: #69707d4d;
-  border: 6px solid transparent;
-  background-clip: content-box;
+  border          : 6px solid transparent;
+  background-clip : content-box;
+}
+
+// ------------------------------------------------------ Overrides ------------------------------------------------------
+::marker {
+  color: var(--primaryColor);
 }

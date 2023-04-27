@@ -3,85 +3,19 @@
     <div class="left-section p-md pr-md pt-lg pb-lg">
       <div class="side-panel center">
         <!-- <h3 class="primary-color mb-lg">{{name | uppercase}}</h3> -->
-        <img class="profile-picture circle mb-md" alt="Profile image" src="../assets/images/avatar.jpg" />
+        <div class="profile-picture circle mb-md"></div>
         <h3 class="mb-sm">Susobhan Dash</h3>
-        <div class="fw-500 mb-sm text-primary">Principal Engineer, UI</div>
+        <div class="fw-400 mb-sm text-primary gothic">Principal Engineer, UI</div>
         <div class="mt-lg">
           <app-nav-bar [model]="navBarItems" [orientation]="'vertical'" [(activeIdx)]="activeIdx"></app-nav-bar>
         </div>
       </div>
       <div class="detail-panel pl-md">
         <ng-container *ngIf="activeIdx === 0">
-          <h1 class="text-primary mb-sm">About Me</h1>
-          <div class="scroll-section">
-            <p class="text-md mb-sm mt-0">
-              I am an UI Developer, with around 6.5 years of experience in various UI technologies like HTML, CSS,
-              Javascript, jQuery, Typescript, Angular (7-13), React etc.
-            </p>
-            <p class="text-md mb-sm">
-              I have been working not just as a UI developer, but mostly as a Problem solver, which I pride myself upon.
-              There has been many projects that I have been included in, irrespective of
-              the technologies used, and my managers always had the faith that I will be able to perform and contribute,
-              some times in multiple projects simultaneously, as I am very good
-              at switching contexts and identifying and creating patterns in any technology I use. This has helped me
-              build a image of a dependable, responsible and dynamic developer. Apart
-              from these skills, my expertise in CSS have helped me carve a niche among other UI developers in our
-              organization.
-            </p>
-            <p class="text-md mb-sm">
-              I have done my B.Sc. in IT & Management and my MBA in IT and Finance. During my initial days, I used to
-              work as a Plant Manager for a PDW (Packaged Drinking Water) plant, for brand Aquasure (from Aquaguard -
-              Eureka Forbes), managing around 40 people.
-              But I always had a liking for IT since my graduation days which made me shift my career into development
-              profile.
-            </p>
-            <p class="text-md mb-sm">
-              I started my development career with basic Javascript, jQuery and CSS stuffs, building reusable libraries
-              for professional work and trying my hands on building libraries and games with
-              Vanilla Javascript for my own learning purpose. When I shifted to a new project, I got a chance to work
-              starting in Angular 7. But I was mostly in charge of developing wireframe and
-              very basic UI components like configurable Menu List, Filterable Tree List etc. We worked in Kendo Angular
-              UI library, so most component came from there, but in between we kept
-              having requirements for some components which did not exist in the Kendo library like Indeterminate
-              Progress bar, Circular Progress bar etc. I took it upon myself and started
-              developing those components and later made them as a Library and published it to npm. Apart from these
-              stuffs, I used to created reusable components like Modal component with custom
-              features like Close on Escape, perform some action on Enter click, created wrappers around Kendo library
-              component for easier upgrading etc, all these while being the sole in-charge
-              for the styling part of the whole application. We had our own style guide, based on which I had created
-              multiple LESS files, some to handle reusable components styling, some to
-              handle style for Kendo components style overrides, media queries etc.
-            </p>
-            <p class="text-md mb-sm">
-              When I moved to my next project, the initial one month I worked as a helping resource to the project. I
-              was in charge of fine tuning, enhancing and restructuring the existing
-              codebase. I spent a lot of time, creating patterns, flows and rewriting a lot of components, sometimes
-              merging them to make reusable components as much as I can. Over time I was
-              the sole developer contributing to the application for about 3+ years. Over the time, I built many
-              patterns and highly reusable components, which made the development much easier and faster.
-              I, single handedly, contributed in implementing Access Control framework, Annotation framework, Custom
-              View Saving, Elastic Search, Notification, Chat, Dashboards, Custom Theming, etc apart
-              from regular development of around 8 modules and more than a hundred reusable components. Also took care
-              of application performance through lazy loading, tree shaking, moving most reusable codes into
-              base classes etc. We were using the PrimeNG library for most UI components, so I created wrapper
-              components around them to provide additional capabilities like adding custom control
-              or action to those components. Created multiple pipes and directive to take care of localization using
-              Angular's inbuilt services. This is the project which helped me learn Angular extensively.
-              Later more people came into the UI team, whom I had to train and mentor since last one year so that I
-              could move to new projects.
-            </p>
-          </div>
+          <ng-template *ngTemplateOutlet="aboutMe"></ng-template>
         </ng-container>
         <ng-container *ngIf="activeIdx === 1">
-          <h1 class="text-primary mb-sm">Projects</h1>
-          <div class="scroll-section">
-            <div>
-              <h3>Major Project: RADIUS</h3>
-              <p class="mt-sm">
-                Description:
-              </p>
-            </div>
-          </div>
+          <ng-template *ngTemplateOutlet="projects"></ng-template>
         </ng-container>
       </div>
     </div>
@@ -90,3 +24,105 @@
     </div>
   </div>
 </div>
+
+<ng-template #aboutMe>
+  <h1 class="text-primary mb-sm">About Me</h1>
+  <div class="scroll-section ta-justify pr-md">
+    <p class="text-md mb-sm mt-0">
+      I am an UI Developer, with around 6.5 years of experience in various UI technologies like HTML, CSS,
+      Javascript, jQuery, Typescript, Angular (7-13), React etc.
+    </p>
+    <p class="text-md mb-sm">
+      I have been working not just as a UI developer, but mostly as a Problem solver, which I pride myself upon.
+      There has been many projects that I have been included in, irrespective of
+      the technologies used, and my managers always had the faith that I will be able to perform and contribute,
+      some times in multiple projects simultaneously, as I am very good
+      at switching contexts and identifying and creating patterns in any technology I use. This has helped me
+      build a image of a dependable, responsible and dynamic developer. Apart
+      from these skills, my expertise in CSS have helped me carve a niche among other UI developers in our
+      organization.
+    </p>
+    <p class="text-md mb-sm">
+      I have done my B.Sc. in IT & Management and my MBA in IT and Finance. During my initial days, I used to
+      work as a Plant Manager for a PDW (Packaged Drinking Water) plant, for brand Aquasure (from Aquaguard -
+      Eureka Forbes), managing around 40 people.
+      But I always had a liking for IT since my graduation days which made me shift my career into development
+      profile.
+    </p>
+    <p class="text-md mb-sm">
+      I started my development career with basic Javascript, jQuery and CSS stuffs, building reusable libraries
+      for professional work and trying my hands on building libraries and games with
+      Vanilla Javascript for my own learning purpose. When I shifted to a new project, I got a chance to work
+      starting in Angular 7. But I was mostly in charge of developing wireframe and
+      very basic UI components like configurable Menu List, Filterable Tree List etc. We worked in Kendo Angular
+      UI library, so most component came from there, but in between we kept
+      having requirements for some components which did not exist in the Kendo library like Indeterminate
+      Progress bar, Circular Progress bar etc. I took it upon myself and started
+      developing those components and later made them as a Library and published it to npm. Apart from these
+      stuffs, I used to created reusable components like Modal component with custom
+      features like Close on Escape, perform some action on Enter click, created wrappers around Kendo library
+      component for easier upgrading etc, all these while being the sole in-charge
+      for the styling part of the whole application. We had our own style guide, based on which I had created
+      multiple LESS files, some to handle reusable components styling, some to
+      handle style for Kendo components style overrides, media queries etc.
+    </p>
+    <p class="text-md mb-sm">
+      When I moved to my next project, the initial one month I worked as a helping resource to the project. I
+      was in charge of fine tuning, enhancing and restructuring the existing
+      codebase. I spent a lot of time, creating patterns, flows and rewriting a lot of components, sometimes
+      merging them to make reusable components as much as I can. Over time I was
+      the sole developer contributing to the application for about 3+ years. Over the time, I built many
+      patterns and highly reusable components, which made the development much easier and faster.
+      I, single handedly, contributed in implementing Access Control framework, Annotation framework, Custom
+      View Saving, Elastic Search, Notification, Chat, Dashboards, Custom Theming, etc apart
+      from regular development of around 8 modules and more than a hundred reusable components. Also took care
+      of application performance through lazy loading, tree shaking, moving most reusable codes into
+      base classes etc. We were using the PrimeNG library for most UI components, so I created wrapper
+      components around them to provide additional capabilities like adding custom control
+      or action to those components. Created multiple pipes and directive to take care of localization using
+      Angular's inbuilt services. This is the project which helped me learn Angular extensively.
+      Later more people came into the UI team, whom I had to train and mentor since last one year so that I
+      could move to new projects.
+    </p>
+  </div>
+</ng-template>
+
+<ng-template #projects>
+  <h1 class="text-primary mb-sm">Projects</h1>
+  <div class="scroll-section">
+    <div class="ta-justify pr-md">
+      <h3 class="project-sticky-header">
+        <span class="mr-sm">
+          <span class="fas fa-chevron-down"></span>
+        </span>
+        <span>Recent Project: RADIUS</span>
+      </h3>
+      <p class="mt-sm fw-300">
+        Description: Packaging MIS Application for large scale customers
+      </p>
+      <p class="mt-sm fw-300">
+        Technology: Angular (10-13), HTML, SCSS, PrimeNG, NG Material. ChartJS, ng2-PdfViewer
+      </p>
+      <p class="mt-sm fw-300">
+        Responsibility: Sole incharge of UI Project for intial 3 years, later tranined and managed team of 10 UI
+        developers on same project
+      </p>
+      <ul class="ml-0">
+        <li>Resturctured whole UI codebase to match latest standards and utilize Angular provided features</li>
+        <li>Made around 100+ robust and dynamic resuable components</li>
+        <li>Created a dynamic grouped grid with all base grid functionalities (resize, reposition, de/select
+          colums, sort, filter, paginate, elastic search etc) with basic div sturcture and custom CSS</li>
+        <li>Created patterns for ease of development in future modules</li>
+        <li>Provided custom date and time formatting using Angular's localeSerice and custom pipes & directives
+        </li>
+        <li>Created wrapper components around all PrimeNG components for ease of control and upgrading</li>
+        <li>Created multiple dashboards, Cutomizable Home screen, Customize Theme component</li>
+        <li>Implemented our custom Chat component and implemented Annotation and Access Management Framework,
+          which were picked up and used in other applications</li>
+        <li>Created helper wrapper components or components inline with PrimeNG components to provide missing
+          features, ex ColorBox, TreeView</li>
+        <li>Tree Shaking, Lazy Loading and moving reused code to base classes</li>
+      </ul>
+    </div>
+  </div>
+</ng-template>
