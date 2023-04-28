@@ -9,7 +9,7 @@ body {
   padding: 2rem;
   background: rgb(255, 205, 170);
   background: linear-gradient(135deg, rgba(255, 205, 170, 1) 0%, rgba(235, 188, 254, 1) 100%);
-  height: calc(100vh);
+  height: calc(var(--app-height));
   width: calc(100vw);
   font-family: 'Poppins', sans-serif;
   font-weight: 200;

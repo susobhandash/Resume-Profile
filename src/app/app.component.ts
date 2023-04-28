@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, HostListener, isDevMode } from '@angular/core';
+import { DeviceDetectorService } from 'ngx-device-detector';
+import { GlobalService } from './services/global.service';
 
 @Component({
   selector: 'app-root',
@@ -16,4 +18,47 @@ export class AppComponent {
     {label: 'Contact', icon: 'fas fa-phone'},
   ];
   activeIdx = 0;
+  deviceInfo = null;
+
+  @HostListener('window:orientationchange', ['$event'])
+  onOrientationChange(event) {
+    setTimeout(() => {
+      let orientation = event.target.orientation === 90 ? 'landscape' : 'portrait';
+      this.checkDeviceType(orientation);
+    }, 250);
+  }
+
+  constructor(
+    private deviceService: DeviceDetectorService,
+    public globalService: GlobalService
+  ) {
+
+  }
+
+  checkDeviceType(orientation = null) {
+    if (!orientation) {
+      this.deviceInfo = this.deviceService.getDeviceInfo();
+      this.globalService.deviceOrientation = this.deviceInfo.orientation;
+
+      // remove this code for production
+      if (isDevMode()) {
+        this.globalService.deviceType = this.globalService.deviceOrientation == 'portrait' ? 'mobile' : 'tablet';
+      }
+    } else {
+      this.globalService.deviceOrientation = orientation;
+    }
+
+    setTimeout(() => {
+      this.setHeight();
+    });
+
+    // const isMobile = this.deviceService.isMobile();
+    // const isTablet = this.deviceService.isTablet();
+    // const isDesktopDevice = this.deviceService.isDesktop();
+  }
+
+  setHeight() {
+    const doc = document.documentElement;
+    doc.style.setProperty('--app-height', `${window.innerHeight}px`);
+  }
 }
