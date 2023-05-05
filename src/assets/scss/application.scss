@@ -1,18 +1,18 @@
-@use './mixins';
+@use "./mixins";
 
 // @import url(./mixins.scss);
 
 .container {
   background-color: var(--primaryBg);
-  height          : calc(100vh - 4rem);
+  height: calc(100vh - 4rem);
   @include mixins.border-radius(25px);
 
   .page-content {
     display: flex;
 
     .left-section {
-      display         : flex;
-      width           : 66.66%;
+      display: flex;
+      width: 66.66%;
       background-color: var(--secondaryBg);
       @include mixins.border-radius(25px);
 
@@ -22,14 +22,14 @@
       }
 
       .detail-panel .scroll-section {
-        height  : calc(100vh - 4rem - 6em - 2.168rem);
+        height: calc(100vh - 4rem - 6em - 2.168rem);
         overflow: auto;
       }
 
       .side-panel {
-        width       : 200px;
-        min-width   : 200px;
-        padding     : 0.5em 1em;
+        width: 200px;
+        min-width: 200px;
+        padding: 0.5em 1em;
         padding-left: 0;
         border-right: 2px solid var(--lightBorder);
       }
@@ -42,11 +42,11 @@
 }
 
 .profile-picture {
-  display   : inline-block;
-  height    : 120px;
-  width     : 120px;
+  display: inline-block;
+  height: 120px;
+  width: 120px;
   transition: transform linear 0.2s;
-  background-image: url('../images/avatar.jpg');
+  background-image: url("../images/avatar.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -56,8 +56,25 @@
 }
 
 .project-sticky-header {
-  position  : sticky;
-  z-index   : 1;
-  top       : 0px;
+  position: sticky;
+  z-index: 1;
+  top: 0px;
   background: var(--secondaryBg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  font-size: var(--baseFontSize);
+  line-height: var(--baseFontSize);
+  margin: 0;
+  font-family: "gothic", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 1em;
+  background: var(--lightBorder);
+}
+
+.panel-enclosure {
+  @include mixins.border-radius(15px);
+  overflow: hidden;
+  background: var(--lightBorder);
 }

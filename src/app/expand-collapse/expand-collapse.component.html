@@ -1,0 +1,42 @@
+<a
+  href="javascript:void[0]"
+  class="expand-collapse-container d-flex align-center secondary-color {{
+    headerStyleClass
+  }}"
+  (click)="change()"
+  [ngClass]="{ 'justify-between pr-s': showPlus, 'b-b': model }"
+  [attr.id]="id"
+>
+  <span class="w-100 d-flex align-center">
+    <span class="mr-s" [ngClass]="icon" *ngIf="icon"></span>
+    <span
+      class="fas fa-chevron-down rotate-icon {{ styleClass }}"
+      [ngClass]="{ rotate: model }"
+      *ngIf="!showPlus"
+    ></span>
+    <span
+      class="{{ styleClass }}"
+      *ngIf="label"
+      [ngClass]="{ 'pl-5': !showPlus }"
+    >
+      {{label}}
+    </span>
+  </span>
+  <ng-container *ngIf="showPlus">
+    <!-- <span class="fas fa-chevron-down rotate-icon {{styleClass}}"
+      [ngClass]="{'rotate': model}"></span> -->
+    <span
+      class="exapnd-collapse-icon {{ styleClass }}"
+      [ngClass]="{ expanded: model, collapsed: !model }"
+    ></span>
+  </ng-container>
+</a>
+
+<div
+  class="collapsible"
+  #collapsible
+  [ngClass]="{ collapsed: !model }"
+  [@grow]="!model ? 'closed' : 'opened'"
+>
+  <ng-content></ng-content>
+</div>

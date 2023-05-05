@@ -8,10 +8,14 @@ body {
 body {
   padding: 2rem;
   background: rgb(255, 205, 170);
-  background: linear-gradient(135deg, rgba(255, 205, 170, 1) 0%, rgba(235, 188, 254, 1) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 205, 170, 1) 0%,
+    rgba(235, 188, 254, 1) 100%
+  );
   height: calc(var(--app-height));
   width: calc(100vw);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 200;
   // font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -24,18 +28,19 @@ body,
 
 // Varibles
 :root {
-  --primaryColor    : #eb5b8c;
-  --primaryColorLt  : #f7b7d3;
-  --secondaryColor  : #f08cc5;
+  --primaryColor: #eb5b8c;
+  --primaryColorLt: #f7b7d3;
+  --secondaryColor: #f08cc5;
   --secondaryColorLt: #f3bdf8;
-  --tertiaryColor   : #ee7f51;
-  --tertiaryColorLt : #ffad72;
-  --primaryText     : #362f53;
-  --lightText       : #a2a3b0;
-  --primaryBg       : #fff;
-  --secondaryBg     : #f5f2f7;
-  --darkBorder      : #82808b;
-  --lightBorder     : #e9e5ef;
+  --tertiaryColor: #ee7f51;
+  --tertiaryColorLt: #ffad72;
+  --primaryText: #362f53;
+  --lightText: #a2a3b0;
+  --primaryBg: #fff;
+  --secondaryBg: #f5f2f7;
+  --darkBorder: #82808b;
+  --lightBorder: #e9e5ef;
+  --baseFontSize: 1rem;
   //#ffcdaa, #ebbcfe
 }
 
@@ -46,9 +51,10 @@ body,
 }
 
 .gothic {
-  font-family: 'gothic', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "gothic", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .poppins {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }

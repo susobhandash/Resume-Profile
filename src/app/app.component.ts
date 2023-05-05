@@ -28,11 +28,14 @@ export class AppComponent {
     }, 250);
   }
 
+  project1Expanded = true;
+  project2Expanded = false;
+
   constructor(
     private deviceService: DeviceDetectorService,
     public globalService: GlobalService
   ) {
-
+    this.checkDeviceType(null);
   }
 
   checkDeviceType(orientation = null) {

@@ -1,0 +1,41 @@
+// .expand-collapse-container {
+//   &:focus {
+//     outline: 1px solid var(--primaryColor);
+//   }
+// }
+
+.exapnd-collapse-icon {
+  position: relative;
+  display: inline-block;
+  height: var(--baseFontSize);
+  width: var(--baseFontSize);
+  color: var(--secondaryColor);
+  &::before,
+  &::after {
+    content: "\f068";
+    // display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    transition: 0.3s linear 0s all;
+    font-family: "Font Awesome 6 Free";
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: var(--fa-display, inline-flex);
+    font-style: normal;
+    font-feature-settings: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+    font-weight: 900;
+  }
+
+  &.collapsed::after {
+    transform: rotate(-90deg);
+  }
+}
+
+.collapsible {
+  overflow: hidden;
+}

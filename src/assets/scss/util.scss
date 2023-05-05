@@ -206,6 +206,47 @@
 }
 
 // ------------------------------------------------------ Border ------------------------------------------------------
+.b-l-lt {
+  border-left: 1px solid var(--lightBorder);
+}
+
+.b-r-lt {
+  border-right: 1px solid var(--lightBorder);
+}
+
+.b-t-lt {
+  border-top: 1px solid var(--lightBorder);
+}
+
+.b-b-lt {
+  border-bottom: 1px solid var(--lightBorder);
+}
+
+.border-lt {
+  border: 1px solid var(--lightBorder);
+}
+
+.b-l {
+  border-left: 1px solid var(--darkBorder);
+}
+
+.b-r {
+  border-right: 1px solid var(--darkBorder);
+}
+
+.b-t {
+  border-top: 1px solid var(--darkBorder);
+}
+
+.b-b {
+  border-bottom: 1px solid var(--darkBorder);
+}
+
+.border {
+  border: 1px solid var(--darkBorder);
+}
+
+// ------------------------------------------------------ Border Radius ------------------------------------------------------
 .br-5 {
   @include mixins.border-radius(5px);
 }
