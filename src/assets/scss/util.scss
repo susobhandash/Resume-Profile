@@ -269,6 +269,10 @@
 }
 
 // ------------------------------------------------------ Alignment ------------------------------------------------------
+.a-c {
+  align-items: center;
+}
+
 .left {
   text-align     : left;
   justify-content: flex-start;

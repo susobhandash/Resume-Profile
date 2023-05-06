@@ -6,17 +6,23 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 // Generic Components
-import { NavBarComponent } from './components/nav-bar/nav-bar.component';
-import { ExpandCollapseComponent } from './expand-collapse/expand-collapse.component';
+import { NavBarComponent } from './components/generic/nav-bar/nav-bar.component';
+import { ExpandCollapseComponent } from './components/generic/expand-collapse/expand-collapse.component';
 
 // Generic Services
 import { GlobalService } from './services/global.service';
+
+// Pages
+import { AboutMePageComponent } from './components/pages/about-me-page/about-me-page.component';
+import { ProjectsPageComponent } from './components/pages/projects-page/projects-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
-    ExpandCollapseComponent
+    ExpandCollapseComponent,
+    AboutMePageComponent,
+    ProjectsPageComponent
   ],
   imports: [
     BrowserModule,

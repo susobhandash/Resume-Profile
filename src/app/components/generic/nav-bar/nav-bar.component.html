@@ -1,0 +1,18 @@
+<ng-container *ngIf="orientation === 'vertical'">
+  <div class="br-20 p-md pl-lg left nav-bar">
+    <div class="nav-bar-item" *ngFor="let item of model; let idx = index;"
+      [ngClass]="{'active text-primary': activeIdx === idx}" (click)="setActiveItem(item, idx)">
+      <span [ngClass]="item.icon"></span>
+      <span class="pl-sm">{{item.label}}</span>
+    </div>
+  </div>
+</ng-container>
+<ng-container *ngIf="orientation === 'horizontal'">
+  <div class="d-f a-c p-sm justify-between nav-bar">
+    <div class="nav-bar-item mob-nav-item" *ngFor="let item of model; let idx = index;"
+      [ngClass]="{'active text-primary': activeIdx === idx}" (click)="setActiveItem(item, idx)">
+      <span [ngClass]="item.icon"></span>
+      <span class="pl-sm">{{item.label}}</span>
+    </div>
+  </div>
+</ng-container>

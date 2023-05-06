@@ -12,8 +12,8 @@ export class AppComponent {
   name = 'Susobhan';
 
   navBarItems = [
-    {label: 'About Me', icon: 'fas fa-user'},
-    {label: 'Projects', icon: 'fas fa-code-fork'},
+    {label: 'About Me', icon: 'fas fa-user', link: '/about-me'},
+    {label: 'Projects', icon: 'fas fa-code-fork', link: '/projects'},
     {label: 'Skills', icon: 'fas fa-list-check'},
     {label: 'Contact', icon: 'fas fa-phone'},
   ];
@@ -27,9 +27,6 @@ export class AppComponent {
       this.checkDeviceType(orientation);
     }, 250);
   }
-
-  project1Expanded = true;
-  project2Expanded = false;
 
   constructor(
     private deviceService: DeviceDetectorService,
