@@ -4,14 +4,14 @@
 
 .container {
   background-color: var(--primaryBg);
-  height: calc(var(--app-height) - (4 * var(--baseFontSize)));
+  height          : calc(var(--app-height) - (4 * var(--baseFontSize)));
   @include mixins.border-radius(25px);
 
   .page-content {
     display: flex;
 
     .scroll-section {
-      height: calc(var(--app-height) - (4 * var(--baseFontSize)) - (6 * var(--spacing)) - (2.168 * var(--baseFontSize)));
+      height  : calc(var(--app-height) - (4 * var(--baseFontSize)) - (6 * var(--spacing)) - (2.168 * var(--baseFontSize)));
       overflow: auto;
     }
 
@@ -19,14 +19,14 @@
       height: calc(var(--app-height) - (5 * var(--baseFontSize)) - (2 * var(--spacing)));
 
       .scroll-section {
-        height: calc(var(--app-height) - (4 * var(--baseFontSize)) - (5 * var(--spacing)) - (2.168 * var(--baseFontSize)));
+        height  : calc(var(--app-height) - (4 * var(--baseFontSize)) - (5 * var(--spacing)) - (2.168 * var(--baseFontSize)));
         overflow: auto;
       }
     }
 
     .left-section {
-      display: flex;
-      width: 66.66%;
+      display         : flex;
+      width           : 66.66%;
       background-color: var(--secondaryBg);
       @include mixins.border-radius(25px);
 
@@ -35,10 +35,14 @@
         height: calc(var(--app-height) - (4 * var(--baseFontSize)) - (6 * var(--spacing)));
       }
 
+      .detail-panel {
+        width: calc(100% - 200px);
+      }
+
       .side-panel {
-        width: 200px;
-        min-width: 200px;
-        padding: calc(0.5 * var(--spacing)) var(--spacing);
+        width       : 200px;
+        min-width   : 200px;
+        padding     : calc(0.5 * var(--spacing)) var(--spacing);
         padding-left: 0;
         border-right: 2px solid var(--lightBorder);
       }
@@ -51,13 +55,13 @@
 }
 
 .profile-picture {
-  display: inline-block;
-  height: 120px;
-  width: 120px;
-  transition: transform linear 0.2s;
-  background-image: url("../images/avatar.jpg");
+  display          : inline-block;
+  height           : 120px;
+  width            : 120px;
+  transition       : transform linear 0.2s;
+  background-image : url("../images/avatar.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size  : cover;
 
   &:hover {
     transform: scale(1.2);
@@ -65,32 +69,47 @@
 }
 
 .project-sticky-header {
-  position: sticky;
-  z-index: 1;
-  top: 0px;
-  background: var(--secondaryBg);
-  display: flex;
-  align-items: center;
+  position       : sticky;
+  z-index        : 1;
+  top            : 0px;
+  background     : var(--secondaryBg);
+  display        : flex;
+  align-items    : center;
   justify-content: space-between;
   text-decoration: none;
-  font-size: var(--baseFontSize);
-  line-height: var(--baseFontSize);
-  margin: 0;
-  font-family: "gothic", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+  font-size      : var(--baseFontSize);
+  line-height    : var(--baseFontSize);
+  margin         : 0;
+  font-family    : "gothic", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  padding: var(--spacing);
+  padding   : var(--spacing);
   background: var(--lightBorder);
 }
 
 .panel-enclosure {
   @include mixins.border-radius(15px);
-  overflow: visible;
+  overflow  : visible;
   background: var(--lightBorder);
 }
 
 .bottom-nav {
   position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+  bottom  : 0;
+  left    : 0;
+  width   : 100%;
+}
+
+.tag {
+  display: inline-flex;
+  height: 40px;
+  min-width: 70px;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  border: 1px solid var(--primaryColor);
+  border-radius: 50px;
+  background-color: var(--primaryBg);
+  margin-right: var(--spacing);
+  margin-bottom: var(--spacing);
+  font-weight: 400;
 }

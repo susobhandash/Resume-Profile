@@ -1,0 +1,39 @@
+<h1 class="text-primary mb-sm">Skill Set</h1>
+<div class="scroll-section">
+    <div class="ta-justify p-sm panel-enclosure mb-md">
+        <app-expand-collapse
+          class="d-block w-100"
+          [(model)]="programmingExpanded"
+          [showPlus]="true"
+          [headerStyleClass]="'project-sticky-header text-primary'"
+          [icon]="'fa-solid fa-code'"
+          [label]="'Programming'"
+        >
+            Programming
+        </app-expand-collapse>
+    </div>
+    <div class="ta-justify mt-sm p-sm panel-enclosure mb-md">
+        <app-expand-collapse
+          class="d-block w-100"
+          [(model)]="libraryExpanded"
+          [showPlus]="true"
+          [headerStyleClass]="'project-sticky-header text-primary'"
+          [icon]="'fa-solid fa-code'"
+          [label]="'Libraries / Frameworks'"
+        >
+            Libraries & Frameworks 
+        </app-expand-collapse>
+    </div>
+    <div class="ta-justify mt-sm p-sm panel-enclosure mb-md">
+        <app-expand-collapse
+          class="d-block w-100"
+          [(model)]="softSkillsExpanded"
+          [showPlus]="true"
+          [headerStyleClass]="'project-sticky-header text-primary'"
+          [icon]="'fa-solid fa-code'"
+          [label]="'Soft Skills'"
+        >
+            <span class="tag" *ngFor="let skill of softSkills">{{skill}}</span>
+        </app-expand-collapse>
+    </div>
+</div>

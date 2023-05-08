@@ -14,7 +14,7 @@ export class AppComponent {
   navBarItems = [
     {label: 'About Me', icon: 'fas fa-user', link: '/about-me'},
     {label: 'Projects', icon: 'fas fa-code-fork', link: '/projects'},
-    {label: 'Skills', icon: 'fas fa-list-check'},
+    {label: 'Skills', icon: 'fas fa-list-check', link: '/skills'},
     {label: 'Contact', icon: 'fas fa-phone'},
   ];
   activeIdx = 0;
