@@ -12,7 +12,7 @@ export class AppComponent {
   name = 'Susobhan';
 
   navBarItems = [
-    {label: 'About Me', icon: 'fas fa-user', link: '/about-me'},
+    {label: 'About Me', icon: 'fas fa-user', link: '/home'},
     {label: 'Projects', icon: 'fas fa-code-fork', link: '/projects'},
     {label: 'Skills', icon: 'fas fa-list-check', link: '/skills'},
     {label: 'Contact', icon: 'fas fa-phone'},
