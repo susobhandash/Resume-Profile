@@ -31,7 +31,8 @@
               "src/assets/scss/mixins.scss",
               "src/assets/scss/util.scss",
               "src/assets/scss/application.scss",
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/scss/mediaQuery.scss"
             ],
             "scripts": [],
             "vendorChunk": true,

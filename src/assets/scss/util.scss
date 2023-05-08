@@ -44,15 +44,15 @@
 
 // ------------------------------------------------------ Spacing Utilities - Padding ------------------------------------------------------
 .p-md {
-  padding: 1em;
+  padding: var(--spacing);
 }
 
 .p-lg {
-  padding: 2em;
+  padding: calc(2 * var(--spacing));
 }
 
 .p-sm {
-  padding: 0.5em;
+  padding: calc(0.5 * var(--spacing));
 }
 
 .p-0 {
@@ -60,15 +60,15 @@
 }
 
 .pl-md {
-  padding-left: 1em;
+  padding-left: var(--spacing);
 }
 
 .pl-lg {
-  padding-left: 2em;
+  padding-left: calc(2 * var(--spacing));
 }
 
 .pl-sm {
-  padding-left: 0.5em;
+  padding-left: calc(0.5 * var(--spacing));
 }
 
 .pl-0 {
@@ -76,15 +76,15 @@
 }
 
 .pr-md {
-  padding-right: 1em;
+  padding-right: var(--spacing);
 }
 
 .pr-lg {
-  padding-right: 2em;
+  padding-right: calc(2 * var(--spacing));
 }
 
 .pr-sm {
-  padding-right: 0.5em;
+  padding-right: calc(0.5 * var(--spacing));
 }
 
 .pr-0 {
@@ -92,15 +92,15 @@
 }
 
 .pt-md {
-  padding-top: 1em;
+  padding-top: var(--spacing);
 }
 
 .pt-lg {
-  padding-top: 2em;
+  padding-top: calc(2 * var(--spacing));
 }
 
 .pt-sm {
-  padding-top: 0.5em;
+  padding-top: calc(0.5 * var(--spacing));
 }
 
 .pt-0 {
@@ -108,15 +108,15 @@
 }
 
 .pb-md {
-  padding-bottom: 1em;
+  padding-bottom: var(--spacing);
 }
 
 .pb-lg {
-  padding-bottom: 2em;
+  padding-bottom: calc(2 * var(--spacing));
 }
 
 .pb-sm {
-  padding-bottom: 0.5em;
+  padding-bottom: calc(0.5 * var(--spacing));
 }
 
 .pb-0 {
@@ -126,15 +126,15 @@
 // ------------------------------------------------------ Spacing Utilities - Margin ------------------------------------------------------
 
 .m-md {
-  margin: 1em;
+  margin: var(--spacing);
 }
 
 .m-lg {
-  margin: 2em;
+  margin: calc(2 * var(--spacing));
 }
 
 .m-sm {
-  margin: 0.5em;
+  margin: calc(0.5 * var(--spacing));
 }
 
 .m-0 {
@@ -142,15 +142,15 @@
 }
 
 .ml-md {
-  margin-left: 1em;
+  margin-left: var(--spacing);
 }
 
 .ml-lg {
-  margin-left: 2em;
+  margin-left: calc(2 * var(--spacing));
 }
 
 .ml-sm {
-  margin-left: 0.5em;
+  margin-left: calc(0.5 * var(--spacing));
 }
 
 .ml-0 {
@@ -158,15 +158,15 @@
 }
 
 .mr-md {
-  margin-right: 1em;
+  margin-right: var(--spacing);
 }
 
 .mr-lg {
-  margin-right: 2em;
+  margin-right: calc(2 * var(--spacing));
 }
 
 .mr-sm {
-  margin-right: 0.5em;
+  margin-right: calc(0.5 * var(--spacing));
 }
 
 .mr-0 {
@@ -174,15 +174,15 @@
 }
 
 .mt-md {
-  margin-top: 1em;
+  margin-top: var(--spacing);
 }
 
 .mt-lg {
-  margin-top: 2em;
+  margin-top: calc(2 * var(--spacing));
 }
 
 .mt-sm {
-  margin-top: 0.5em;
+  margin-top: calc(0.5 * var(--spacing));
 }
 
 .mt-0 {
@@ -190,15 +190,15 @@
 }
 
 .mb-md {
-  margin-bottom: 1em;
+  margin-bottom: var(--spacing);
 }
 
 .mb-lg {
-  margin-bottom: 2em;
+  margin-bottom: calc(2 * var(--spacing));
 }
 
 .mb-sm {
-  margin-bottom: 0.5em;
+  margin-bottom: calc(0.5 * var(--spacing));
 }
 
 .mb-0 {
@@ -305,8 +305,8 @@
 
 // ------------------------------------------------------ Fonts ------------------------------------------------------
 body {
-  font-size          : 0.9rem;
-  line-height        : 1.25rem;
+  font-size          : calc(0.9 * var(--baseFontSize));
+  line-height        : calc(1.25 * var(--baseFontSize));
   font-family        : 'Poppins', sans-serif;
   font-style         : normal;
   font-stretch       : normal;
@@ -314,24 +314,24 @@ body {
 }
 
 h1 {
-  font-size  : 2.168rem;
-  line-height: 2.168rem;
+  font-size  : calc(2.168 * var(--baseFontSize));
+  line-height: calc(2.168 * var(--baseFontSize));
   margin     : 0;
   font-weight: 400;
   font-family: 'gothic', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 h2 {
-  font-size  : 1.168rem;
-  line-height: 1.168rem;
+  font-size  : calc(1.168 * var(--baseFontSize));
+  line-height: calc(1.168 * var(--baseFontSize));
   margin     : 0;
   font-weight: 400;
   font-family: 'gothic', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 h3 {
-  font-size  : 1rem;
-  line-height: 1rem;
+  font-size  : var(--baseFontSize);
+  line-height: var(--baseFontSize);
   margin     : 0;
   font-family: 'gothic', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -359,18 +359,18 @@ h3 {
 }
 
 .text-lg {
-  font-size  : 1.5rem;
-  line-height: 1.6rem;
+  font-size  : calc(1.5 * var(--baseFontSize));
+  line-height: calc(1.6 * var(--baseFontSize));
 }
 
 .text-md {
-  font-size  : 0.9rem;
-  line-height: 1.25rem;
+  font-size  : calc(0.9 * var(--baseFontSize));
+  line-height: calc(1.25 * var(--baseFontSize));
 }
 
 .text-sm {
-  font-size  : 0.8rem;
-  line-height: 0.85rem;
+  font-size  : calc(0.8 * var(--baseFontSize));
+  line-height: calc(0.85 * var(--baseFontSize));
 }
 
 // ------------------------------------------------------ Scroll ------------------------------------------------------

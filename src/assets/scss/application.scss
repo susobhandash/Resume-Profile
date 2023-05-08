@@ -4,14 +4,24 @@
 
 .container {
   background-color: var(--primaryBg);
-  height: calc(100vh - 4rem);
+  height: calc(100vh - (4 * var(--baseFontSize)));
   @include mixins.border-radius(25px);
 
   .page-content {
     display: flex;
 
+    .scroll-section {
+      height: calc(100vh - (4 * var(--baseFontSize)) - (6 * var(--spacing)) - (2.168 * var(--baseFontSize)));
+      overflow: auto;
+    }
+
     &.mobile-view {
-      height: calc(100vh - 4rem - 2em);
+      height: calc(100vh - (5 * var(--baseFontSize)) - (2 * var(--spacing)));
+
+      .scroll-section {
+        height: calc(100vh - (4 * var(--baseFontSize)) - (5 * var(--spacing)) - (2.168 * var(--baseFontSize)));
+        overflow: auto;
+      }
     }
 
     .left-section {
@@ -22,18 +32,13 @@
 
       .side-panel,
       .detail-panel {
-        height: calc(100vh - 4rem - 6em);
-      }
-
-      .detail-panel .scroll-section {
-        height: calc(100vh - 4rem - 6em - 2.168rem);
-        overflow: auto;
+        height: calc(100vh - (4 * var(--baseFontSize)) - (6 * var(--spacing)));
       }
 
       .side-panel {
         width: 200px;
         min-width: 200px;
-        padding: 0.5em 1em;
+        padding: calc(0.5 * var(--spacing)) var(--spacing);
         padding-left: 0;
         border-right: 2px solid var(--lightBorder);
       }
@@ -73,7 +78,7 @@
   margin: 0;
   font-family: "gothic", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  padding: 1em;
+  padding: var(--spacing);
   background: var(--lightBorder);
 }
 

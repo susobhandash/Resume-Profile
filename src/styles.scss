@@ -6,7 +6,7 @@ body {
 }
 
 body {
-  padding: 2rem;
+  padding: calc(2 * var(--baseFontSize));
   background: rgb(255, 205, 170);
   background: linear-gradient(
     135deg,
@@ -41,6 +41,8 @@ body,
   --darkBorder: #82808b;
   --lightBorder: #e9e5ef;
   --baseFontSize: 1rem;
+  --spacing: 1em;
+  // --fontSize: 1em;
   //#ffcdaa, #ebbcfe
 }
 
