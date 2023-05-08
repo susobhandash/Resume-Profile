@@ -84,7 +84,7 @@
 
 .panel-enclosure {
   @include mixins.border-radius(15px);
-  overflow: hidden;
+  overflow: visible;
   background: var(--lightBorder);
 }
 
