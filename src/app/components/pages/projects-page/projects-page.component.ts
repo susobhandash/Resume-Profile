@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import data from '../../../../assets/data/projects';
 
 @Component({
   selector: 'app-projects-page',
@@ -6,8 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./projects-page.component.scss']
 })
 export class ProjectsPageComponent {
-
-  project1Expanded = true;
-  project2Expanded = false;
-  
+  projects = data;
 }

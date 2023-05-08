@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import data from '../../../../assets/data/aboutMe'
 
 @Component({
   selector: 'app-about-me-page',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./about-me-page.component.scss']
 })
 export class AboutMePageComponent {
-
+  aboutMe = data;
 }

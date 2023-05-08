@@ -28,6 +28,13 @@ export class AppComponent {
     }, 250);
   }
 
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    setTimeout(() => {
+      this.setHeight();
+    }, 250);
+  }
+
   constructor(
     private deviceService: DeviceDetectorService,
     public globalService: GlobalService
