@@ -8,7 +8,7 @@
     padding: calc(var(--baseFontSize) * 0.75);
 
     .container {
-      height: calc(100vh - (5 * var(--baseFontSize)));
+      height: calc(var(--app-height) - (5 * var(--baseFontSize)));
     }
   }
 }

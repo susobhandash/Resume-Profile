@@ -4,22 +4,22 @@
 
 .container {
   background-color: var(--primaryBg);
-  height: calc(100vh - (4 * var(--baseFontSize)));
+  height: calc(var(--app-height) - (4 * var(--baseFontSize)));
   @include mixins.border-radius(25px);
 
   .page-content {
     display: flex;
 
     .scroll-section {
-      height: calc(100vh - (4 * var(--baseFontSize)) - (6 * var(--spacing)) - (2.168 * var(--baseFontSize)));
+      height: calc(var(--app-height) - (4 * var(--baseFontSize)) - (6 * var(--spacing)) - (2.168 * var(--baseFontSize)));
       overflow: auto;
     }
 
     &.mobile-view {
-      height: calc(100vh - (5 * var(--baseFontSize)) - (2 * var(--spacing)));
+      height: calc(var(--app-height) - (5 * var(--baseFontSize)) - (2 * var(--spacing)));
 
       .scroll-section {
-        height: calc(100vh - (4 * var(--baseFontSize)) - (5 * var(--spacing)) - (2.168 * var(--baseFontSize)));
+        height: calc(var(--app-height) - (4 * var(--baseFontSize)) - (5 * var(--spacing)) - (2.168 * var(--baseFontSize)));
         overflow: auto;
       }
     }
@@ -32,7 +32,7 @@
 
       .side-panel,
       .detail-panel {
-        height: calc(100vh - (4 * var(--baseFontSize)) - (6 * var(--spacing)));
+        height: calc(var(--app-height) - (4 * var(--baseFontSize)) - (6 * var(--spacing)));
       }
 
       .side-panel {
