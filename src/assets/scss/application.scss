@@ -116,7 +116,8 @@
   align-items: center;
   justify-content: center;
   padding: 8px 12px;
-  border: 1px solid var(--primaryColor);
+  border: 1px solid var(--tertiaryColor);
+  color: var(--tertiaryColor);
   border-radius: 50px;
   background-color: var(--primaryBg);
   margin-right: var(--spacing);
@@ -153,17 +154,18 @@
         display: inline-block;
         transition: all linear 0.3s;
         height: 20px;
-        border-right: 2px solid var(--secondaryColorLt);
+        // border-right: 2px solid var(--secondaryColorLt);
         border-radius: 10px;
-        background-image: repeating-linear-gradient(
-          45deg,
-          var(--primaryBg),
-          var(--primaryBg) 30px,
-          var(--secondaryColorLt) 30px,
-          var(--secondaryColorLt) 60px
-        );
-        background-size: 200% 200%;
-        animation: slidingBg 20s linear infinite;
+        background: linear-gradient(90deg, var(--secondaryColorLt) 0%, var(--primaryColorLt) 40%, var(--primaryColor) 100%);
+        // background-image: repeating-linear-gradient(
+        //   45deg,
+        //   var(--primaryBg),
+        //   var(--primaryBg) 30px,
+        //   var(--secondaryColorLt) 30px,
+        //   var(--secondaryColorLt) 60px
+        // );
+        // background-size: 200% 200%;
+        // animation: slidingBg 20s linear infinite;
         font-weight: 500;
         font-size: 10px;
         line-height: 20px;
