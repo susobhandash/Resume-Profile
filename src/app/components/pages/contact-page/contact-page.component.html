@@ -7,7 +7,7 @@
       <h2 class="fw-500 mb-sm text-primary gothic">Principal Engineer, UI</h2>
     </div>
   </ng-container>
-  <div class="card p-md bg-primary mb-md" *ngIf="contactDetails?.email">
+  <div class="card p-md bg-primary mb-sm" *ngIf="contactDetails?.email">
     <div class="d-f a-c">
       <span class="fa-solid fa-at text-primary"></span>
       <a href="mailto:{{ contactDetails?.email }}" class="pl-sm">{{
@@ -15,55 +15,54 @@
       }}</a>
     </div>
   </div>
-  <div class="card p-md bg-primary mb-md" *ngIf="contactDetails?.phone">
+  <div class="card p-md bg-primary mb-sm" *ngIf="contactDetails?.phone">
     <div class="d-f a-c">
       <span class="fa-solid fa-phone text-primary"></span>
       <span class="pl-sm">{{ contactDetails?.phone }}</span>
     </div>
   </div>
-  <div class="card p-md bg-primary mb-md" *ngIf="contactDetails?.twitter">
+  <div class="card p-md bg-primary mb-sm" *ngIf="contactDetails?.twitter">
     <div class="d-f a-c">
       <span class="fa-brands fa-twitter text-primary"></span>
-      <a [attr.href]="contactDetails?.twitter" class="pl-sm">{{
+      <a target="_blank" [attr.href]="contactDetails?.twitter" class="pl-sm">{{
         contactDetails?.twitter
       }}</a>
     </div>
   </div>
-  <div class="card p-md bg-primary mb-md" *ngIf="contactDetails?.phone">
+  <div class="card p-md bg-primary mb-sm" *ngIf="contactDetails?.facebook">
     <div class="d-f a-c">
       <span class="fa-brands fa-facebook text-primary"></span>
-      <a [attr.href]="contactDetails?.facebook" class="pl-sm">{{
+      <a target="_blank" [attr.href]="contactDetails?.facebook" class="pl-sm">{{
         contactDetails?.facebook
       }}</a>
     </div>
   </div>
-  <div class="card p-md bg-primary mb-md" *ngIf="contactDetails?.phone">
+  <div class="card p-md bg-primary mb-sm" *ngIf="contactDetails?.github">
     <div class="d-f a-c">
       <span class="fa-brands fa-github text-primary"></span>
-      <a [attr.href]="contactDetails?.github" class="pl-sm">{{
+      <a target="_blank" [attr.href]="contactDetails?.github" class="pl-sm">{{
         contactDetails?.github
       }}</a>
     </div>
   </div>
-  <div class="card p-md bg-primary mb-md" *ngIf="contactDetails?.phone">
+  <div class="card p-md bg-primary mb-sm" *ngIf="contactDetails?.bitbucket">
     <div class="d-f a-c">
       <span class="fa-brands fa-bitbucket text-primary"></span>
-      <a [attr.href]="contactDetails?.bitbucket" class="pl-sm">{{
+      <a target="_blank" [attr.href]="contactDetails?.bitbucket" class="pl-sm">{{
         contactDetails?.bitbucket
       }}</a>
     </div>
   </div>
   <div class="card p-md bg-primary mb-md" *ngIf="contactDetails?.others">
     <ng-container *ngFor="let item of contactDetails.others">
-      <div class="card border-lt p-md d-f a-c justify-between">
+      <div class="card border-lt mb-md p-md d-f a-c justify-between">
         <div class="d-b w-100">
           <div class="mb-sm text-md">
             <a target="_blank" [attr.href]="item.url">{{ item.label }}</a>
           </div>
           <div>{{ item.description }}</div>
         </div>
-        <div class="card preview border-lt" [style.background-image]="'url(../../../../assets/images/' + item.image + ')'">
-          
+        <div class="card preview border-lt" [style.background-image]="'url(../../../../assets/images/' + item.image + ')'" *ngIf="item.image">
         </div>
       </div>
     </ng-container>
