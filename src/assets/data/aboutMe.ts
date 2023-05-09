@@ -6,3 +6,41 @@ const data = [
 ];
 
 export default data;
+
+export const experienceDetail = [
+    {
+        companyName: 'ePS - eProductivitySoftware',
+        duration: 'April 22 - Till Date',
+        position: 'Principal Engineer',
+        logo: 'logo-eps.jpg',
+        skills: 'Layout Design · JavaScript Frameworks · Front-End Development · Communication · Technical Presentations · Web Technologies · Web Development · Styling · Responsive Web Design · SASS · Design Specifications · Application Architecture · CSS Flexbox · Angular Material · User Interface Design · TypeScript · HTML5 · Technical Architecture · Software Development · Code Review · Code Design · Analytical Skills · Angular'
+    },
+    {
+        companyName: 'ePS - eProductivitySoftware',
+        duration: 'Jan 22 - Apr 22',
+        position: 'Senior Software Engineer',
+        logo: 'logo-eps.jpg',
+        skills: 'Layout Design · JavaScript Frameworks · Front-End Development · Communication · Web Technologies · Web Development · Styling · Responsive Web Design · SASS · Design Specifications · Application Architecture · CSS Flexbox · Angular Material · TypeScript · HTML5 · Software Development · Code Review · Code Design · Analytical Skills · Angular'
+    },
+    {
+        companyName: 'efi - Electronics for Imaging',
+        duration: 'April 18 - Jan 22',
+        position: 'Senior Software Engineer',
+        logo: 'logo-efi.jpg',
+        skills: 'Layout Design · JavaScript Frameworks · Front-End Development · Communication · Web Technologies · Web Development · Styling · Responsive Web Design · SASS · Angular Material · TypeScript · HTML5 · Software Development · Code Review · Analytical Skills · Angular'
+    },
+    {
+        companyName: 'efi - Electronics for Imaging',
+        duration: 'June 17 - April 18',
+        position: 'Software Engineer',
+        logo: 'logo-efi.jpg',
+        skills: 'Layout Design · JavaScript Frameworks · Front-End Development · Communication · Web Technologies · Web Development · Styling · Responsive Web Design · HTML5 · Software Development · Code Review · Analytical Skills · Angular'
+    },
+    {
+        companyName: 'NichePro Technologies',
+        duration: 'Oct 16 - June 17',
+        position: 'Software Developer',
+        logo: 'logo-nichepro.jpg',
+        skills: 'Layout Design · Front-End Development · Communication · Web Technologies · Web Development · Styling · Responsive Web Design · HTML5 · Analytical Skills'
+    }
+];

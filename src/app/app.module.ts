@@ -16,6 +16,7 @@ import { GlobalService } from './services/global.service';
 import { AboutMePageComponent } from './components/pages/about-me-page/about-me-page.component';
 import { ProjectsPageComponent } from './components/pages/projects-page/projects-page.component';
 import { SkillsPageComponent } from './components/pages/skills-page/skills-page.component';
+import { ContactPageComponent } from './components/pages/contact-page/contact-page.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { SkillsPageComponent } from './components/pages/skills-page/skills-page.
     ExpandCollapseComponent,
     AboutMePageComponent,
     ProjectsPageComponent,
-    SkillsPageComponent
+    SkillsPageComponent,
+    ContactPageComponent
   ],
   imports: [
     BrowserModule,

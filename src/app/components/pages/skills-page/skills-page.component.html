@@ -17,7 +17,7 @@
               class="progress-width"
               [style.width]="skill.proficiency + '%'"
             >
-              <span class="text-value">{{ skill.proficiency / 10 }}</span>
+              <span class="text-value">{{ skill.proficiency / 10 }} / 10</span>
             </span>
           </span>
         </span>
@@ -41,7 +41,7 @@
               class="progress-width"
               [style.width]="skill.proficiency + '%'"
             >
-              <span class="text-value">{{ skill.proficiency / 10 }}</span>
+              <span class="text-value">{{ skill.proficiency / 10 }} / 10</span>
             </span>
           </span>
         </span>
@@ -57,7 +57,7 @@
       [icon]="'fa-solid fa-bars-progress'"
       [label]="'Soft Skills'"
     >
-      <span class="pl-md">
+      <span class="pl-md d-i-b">
         <span class="tag" *ngFor="let skill of softSkills">{{ skill }}</span>
       </span>
     </app-expand-collapse>

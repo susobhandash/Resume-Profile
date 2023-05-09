@@ -15,7 +15,7 @@ export class AppComponent {
     {label: 'About Me', icon: 'fas fa-user', link: '/home'},
     {label: 'Projects', icon: 'fas fa-code-fork', link: '/projects'},
     {label: 'Skills', icon: 'fas fa-list-check', link: '/skills'},
-    {label: 'Contact', icon: 'fas fa-phone'},
+    {label: 'Contact', icon: 'fas fa-phone', link: '/contact'},
   ];
   activeIdx = 0;
   deviceInfo = null;

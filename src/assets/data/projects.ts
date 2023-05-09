@@ -39,6 +39,38 @@ const data = [
             'Helped in lazy loading modules, creating customizable Home screen, Custom Menu selection, etc'
         ]
     },
+    {
+        label: 'Personal Projects (1) : Covid Dashboard (React)',
+        icon: 'fa-solid fa-user',
+        expanded: false,
+        description: 'Covid dashboard to learn React JS',
+        technology: ['ReactJS', 'HTML', 'SCSS', 'ChartJS', 'MaterialUI - MUI'],
+        responsibilty: 'Built this application to learn ReactJS',
+        detail: [
+            'Responsive Layout for mobile views supported',
+            'Provided quick navigation between states in the Detail page',
+            'Integrated ChartJS to display data (currently not working as APIs are not getting updated any more)',
+            '<a target="_blank" href="https://covid-react-ten.vercel.app/"><div class="card covid-react"></div></a>'
+        ]
+    },
+    {
+        label: 'Personal Projects (2) : Covid Dashboard (Angular)',
+        icon: 'fa-solid fa-user',
+        expanded: false,
+        description: 'Covid dashboard using Angular',
+        technology: ['Angular', 'HTML', 'SCSS', 'ChartJS', 'Angular Material'],
+        responsibilty: 'Built this application using Angular with capcbility to switch between dark and light mode',
+        detail: [
+            'Provided theme switching capability',
+            'Responsive Layout for mobile views supported',
+            'Created custom bar graphs using SVGs to display various data',
+            'Created custom pie charts using SVGs to display various data for each disrict',
+            'Clicking on top case types, sorts District data based on same type',
+            'Collapsible sections to hide unwanted data',
+            'Easy switching of States from dropdown',
+            '<a target="_blank" href="https://covid-angular.susobhandash.vercel.app/home"><div class="card covid-ng"></div></a>'
+        ]
+    },
 ];
 
 export default data;

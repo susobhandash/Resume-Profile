@@ -1,16 +1,62 @@
 <!-- <ng-template #aboutMe> -->
 <h1 class="text-primary mb-sm">About Me</h1>
-<div class="scroll-section ta-justify pr-md">
-    <p class="text-md mb-sm" *ngFor="let item of aboutMe; let idx = index;"
-        [ngClass]="{'mt-0': idx === 0}">
-        {{item}}
-    </p>
-    <!-- <p class="text-md mb-sm mt-0">
+<div class="scroll-section">
+  <div class="ta-justify p-sm panel-enclosure mb-md">
+    <app-expand-collapse
+      class="d-block w-100"
+      [(model)]="aboutMeExpanded"
+      [showPlus]="true"
+      [headerStyleClass]="'project-sticky-header text-primary'"
+      [label]="'Me in few lines'"
+    >
+      <p
+        class="text-md mb-sm p-sm"
+        *ngFor="let item of aboutMe; let idx = index"
+        [ngClass]="{ 'mt-0': idx === 0 }"
+      >
+        {{ item }}
+      </p>
+    </app-expand-collapse>
+  </div>
+  <div class="ta-justify p-sm panel-enclosure mb-md">
+    <app-expand-collapse
+      class="d-block w-100"
+      [(model)]="experienceExpanded"
+      [showPlus]="true"
+      [headerStyleClass]="'project-sticky-header text-primary'"
+      [label]="'Work Experience'"
+    >
+      <div class="p-sm">
+        <div
+          class="card p-md bg-primary mb-md"
+          *ngFor="let exp of experienceDetail"
+        >
+          <div class="d-f a-c b-b-lt mb-sm pb-sm justify-between">
+            <div class="d-f a-c">
+              <img
+                src="../../../../assets/images/{{ exp.logo }}"
+                class="circle"
+                *ngIf="exp.logo"
+              />
+              <span class="pl-sm fw-500 text-primary text-lg">
+                {{ exp.companyName }}
+              </span>
+            </div>
+            <div class="right fw-300">{{ exp.duration }}</div>
+          </div>
+          <div class="mb-sm text-md fw-400">Position: {{ exp.position }}</div>
+          <div class="mb-sm text-sm">Skills: {{ exp.skills }}</div>
+        </div>
+      </div>
+    </app-expand-collapse>
+  </div>
+
+  <!-- <p class="text-md mb-sm mt-0">
         I am an UI Developer, with around 6.5 years of experience in various UI
         technologies like HTML, CSS, Javascript, jQuery, Typescript, OOJS, Angular
         (7-13), React etc.
     </p> -->
-    <!-- <p class="text-md mb-sm">
+  <!-- <p class="text-md mb-sm">
         I prefer, myself to be recognized as a problem solver, rather than just a
         Developer. I try not to be restricted by technologies. I like following
         and am good at recognizing patterns, which helps me in getting into any
@@ -22,13 +68,13 @@
         better way to do the thing, I have done in past, I push to refactor the
         code. I don't believe in the saying "Don't touch it if it's working".
     </p> -->
-    <!-- <p class="text-md mb-sm">
+  <!-- <p class="text-md mb-sm">
         I speak my mind. I come up clearly on my thoughts on a matter, and give
         the reasoning behind my thinking (mostly during Sprint Meetings). I love
         to understand workflows (rather than just coding whats given to me) and
         try to make them better from an end user experience point of view.
     </p> -->
-    <!-- I have been working not just as a UI developer, but mostly as a Problem solver, which I pride myself upon.
+  <!-- I have been working not just as a UI developer, but mostly as a Problem solver, which I pride myself upon.
         There has been many projects that I have been included in, irrespective of
         the technologies used, and my managers always had the faith that I will be able to perform and contribute,
         some times in multiple projects simultaneously, as I am very good
@@ -36,7 +82,7 @@
         build a image of a dependable, responsible and dynamic developer. Apart
         from these skills, my expertise in CSS have helped me carve a niche among other UI developers in our
         organization. -->
-    <!-- <p class="text-md mb-sm">
+  <!-- <p class="text-md mb-sm">
         I have done my B.Sc. in IT & Management and my MBA in IT and Finance.
         During my initial days, I used to work as a Plant Manager for a PDW
         (Packaged Drinking Water) plant, for brand Aquasure (from Aquaguard -
@@ -44,7 +90,7 @@
         IT, since my graduation days, which made me shift my career into
         development profile. Better late than never.
     </p> -->
-    <!-- <p class="text-md mb-sm">
+  <!-- <p class="text-md mb-sm">
         I started my development career with basic Javascript, jQuery and CSS stuffs, building reusable libraries
         for professional work and trying my hands on building libraries and games with
         Vanilla Javascript for my own learning purpose. When I shifted to a new project, I got a chance to work

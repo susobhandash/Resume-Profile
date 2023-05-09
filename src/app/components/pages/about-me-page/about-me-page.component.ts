@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import data from '../../../../assets/data/aboutMe'
+import data from '../../../../assets/data/aboutMe';
+import { experienceDetail } from '../../../../assets/data/aboutMe';
 
 @Component({
   selector: 'app-about-me-page',
@@ -8,4 +9,8 @@ import data from '../../../../assets/data/aboutMe'
 })
 export class AboutMePageComponent {
   aboutMe = data;
+  experienceDetail = experienceDetail;
+
+  aboutMeExpanded = true;
+  experienceExpanded = false;
 }

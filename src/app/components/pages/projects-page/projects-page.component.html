@@ -20,9 +20,7 @@
             Responsibility: {{item.responsibilty}}
           </p>
           <ul class="ml-0">
-            <li *ngFor="let detail of item.detail">
-              {{detail}}
-            </li>
+            <li *ngFor="let detail of item.detail" [innerHTML]="detail"></li>
           </ul>
         </app-expand-collapse>
       </div>

@@ -285,6 +285,7 @@
 
 .center {
   text-align: center;
+  justify-content: center;
 }
 
 .ta-justify {
@@ -358,6 +359,10 @@ h3 {
   font-weight: 400;
 }
 
+.fw-500 {
+  font-weight: 500;
+}
+
 .text-lg {
   font-size  : calc(1.5 * var(--baseFontSize));
   line-height: calc(1.6 * var(--baseFontSize));
@@ -370,7 +375,12 @@ h3 {
 
 .text-sm {
   font-size  : calc(0.8 * var(--baseFontSize));
-  line-height: calc(0.85 * var(--baseFontSize));
+  line-height: calc(0.9 * var(--baseFontSize));
+}
+
+a {
+  font-weight: 400;
+  color: var(--primaryColor);
 }
 
 // ------------------------------------------------------ Scroll ------------------------------------------------------
@@ -392,6 +402,14 @@ h3 {
   background-color: #69707d4d;
   border          : 6px solid transparent;
   background-clip : content-box;
+}
+
+// ------------------------------------------------------ Widths ------------------------------------------------------
+.bg-primary {
+  background: var(--primaryBg);
+}
+.bg-secondary {
+  background: var(--secondaryBg);
 }
 
 // ------------------------------------------------------ Widths ------------------------------------------------------
