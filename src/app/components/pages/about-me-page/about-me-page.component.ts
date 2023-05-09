@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import data from '../../../../assets/data/aboutMe';
 import { experienceDetail } from '../../../../assets/data/aboutMe';
+import { GlobalService } from 'src/app/services/global.service';
 
 @Component({
   selector: 'app-about-me-page',
@@ -13,4 +14,9 @@ export class AboutMePageComponent {
 
   aboutMeExpanded = true;
   experienceExpanded = false;
+
+  constructor(
+    public globalService: GlobalService
+  ) {
+  }
 }

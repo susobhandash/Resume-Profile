@@ -31,7 +31,8 @@
           class="card p-md bg-primary mb-md"
           *ngFor="let exp of experienceDetail"
         >
-          <div class="d-f a-c b-b-lt mb-sm pb-sm justify-between">
+          <div class="d-f b-b-lt mb-sm pb-sm "
+          [ngClass]="{'fd-col': globalService.deviceOrientation === 'portrait', 'justify-between a-c': globalService.deviceOrientation === 'landscape'}">
             <div class="d-f a-c">
               <img
                 src="../../../../assets/images/{{ exp.logo }}"

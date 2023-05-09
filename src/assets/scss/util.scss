@@ -21,6 +21,10 @@
   display: inline;
 }
 
+.fd-col {
+  flex-direction: column;
+}
+
 // ------------------------------------------------------ Position Utilities ------------------------------------------------------
 .p-a {
   position: absolute;
