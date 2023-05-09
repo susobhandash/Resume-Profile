@@ -57,7 +57,9 @@
       [icon]="'fa-solid fa-bars-progress'"
       [label]="'Soft Skills'"
     >
-      <span class="tag" *ngFor="let skill of softSkills">{{ skill }}</span>
+      <span class="pl-md">
+        <span class="tag" *ngFor="let skill of softSkills">{{ skill }}</span>
+      </span>
     </app-expand-collapse>
   </div>
 </div>

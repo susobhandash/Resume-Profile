@@ -115,7 +115,7 @@
   min-width: 70px;
   align-items: center;
   justify-content: center;
-  padding: 8px 12px;
+  padding: 20px;
   border: 1px solid var(--tertiaryColor);
   color: var(--tertiaryColor);
   border-radius: 50px;
@@ -123,6 +123,12 @@
   margin-right: var(--spacing);
   margin-bottom: var(--spacing);
   font-weight: 400;
+  transition: all linear 0.2s;
+
+  &:hover {
+    background-color: var(--tertiaryColor);
+    color: var(--primaryBg);
+  }
 }
 
 .progress-container {
