@@ -126,7 +126,8 @@
   transition: all linear 0.2s;
 
   &:hover {
-    background-color: var(--tertiaryColor);
+    background: linear-gradient(90deg, var(--tertiaryColorLt) 0%, var(--tertiaryColorLt) 10%, var(--tertiaryColor) 80%);
+    // background-color: var(--tertiaryColor);
     color: var(--primaryBg);
   }
 }
