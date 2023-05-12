@@ -16,4 +16,4 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Further help
 
-Please contact [Susobhan] "susobhan.dash@gmail.com" for further help.
+Please contact Susobhan on "susobhan.dash@gmail.com" for further help.
