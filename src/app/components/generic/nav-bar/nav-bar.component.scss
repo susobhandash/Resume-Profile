@@ -1,3 +1,5 @@
+@use "../../../../assets/scss/mixins.scss";
+
 .nav-bar {
   background: var(--primaryBg);
   font-size: 14px;
@@ -27,7 +29,7 @@
         background-color: var(--primaryColor);
         color: var(--primaryBg);
         padding: 5px;
-        border-radius: 5px;
+        @include mixins.border-radius(5px);
 
         &::before {
           content: none;
@@ -59,7 +61,7 @@
         top: 10px;
         width: 4px;
         left: calc(-2em + 4px);
-        border-radius: 2px;
+        @include mixins.border-radius(2px);
         background-color: var(--primaryColor);
       }
     }

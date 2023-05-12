@@ -10,14 +10,17 @@
           [icon]="item.icon"
           [label]="item.label"
         >
-          <p class="mt-sm fw-300">
-            Description: {{item.description}}
+          <p class="mt-sm fw-200">
+            <span class="fw-400 pr-sm">Description:</span>
+            {{item.description}}
           </p>
-          <p class="mt-sm fw-300">
-            Technology: <span *ngFor="let tech of item.technology">{{tech}}, </span>
+          <p class="mt-sm fw-200">
+            <span class="fw-400 pr-sm">Technology:</span>
+            <span *ngFor="let tech of item.technology">{{tech}}, </span>
           </p>
-          <p class="mt-sm fw-300">
-            Responsibility: {{item.responsibilty}}
+          <p class="mt-sm fw-200">
+            <span class="fw-400 pr-sm">Responsibility:</span>
+            {{item.responsibilty}}
           </p>
           <ul class="ml-0">
             <li *ngFor="let detail of item.detail" [innerHTML]="detail"></li>
