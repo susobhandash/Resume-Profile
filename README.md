@@ -1,11 +1,6 @@
 # SusobhanProfile
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0. You can use it to make your a website as your profile as well. See below sectons on how to do same.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0. You can use it to make your own profile/resume website as well. See below sections on how to do same.
 
 ## Customizing per your requirement
 
@@ -15,6 +10,10 @@ Any images you want to add, you can put in `src\assets\images` folder and add th
 
 Change the title in `app.component.html` to our name.
 
+## Development server
+
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Please contact [Susobhan](susobhan.dash@gmail.com) for further help.
