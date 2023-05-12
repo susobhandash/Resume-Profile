@@ -1,7 +1,7 @@
 <div class="container p-md">
   <ng-container *ngIf="globalService.deviceOrientation === 'landscape'">
     <div class="page-content">
-      <div class="left-section p-md pr-md pt-lg pb-lg">
+      <div class="left-section p-md pt-lg pb-lg">
         <div class="side-panel center">
           <!-- <h3 class="primary-color mb-lg">{{name | uppercase}}</h3> -->
           <div class="profile-picture circle mb-md"></div>
@@ -17,7 +17,14 @@
           <router-outlet></router-outlet>
         </div>
       </div>
-      <div class="right-section"></div>
+      <div class="right-section pl-md">
+        <div class="side-panel p-md">
+          <h1 class="text-primary mb-sm">Blog</h1>
+          <div class="scroll-section">
+            Coming soon...
+          </div>
+        </div>
+      </div>
     </div>
   </ng-container>
   <ng-container *ngIf="globalService.deviceOrientation === 'portrait'">

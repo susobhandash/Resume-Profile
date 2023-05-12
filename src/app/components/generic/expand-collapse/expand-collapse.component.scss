@@ -6,17 +6,18 @@
 
 .exapnd-collapse-icon {
   position: relative;
-  display: inline-block;
-  height: var(--baseFontSize);
-  width: var(--baseFontSize);
+  height: calc(var(--baseFontSize) * 1.1);
+  width: calc(var(--baseFontSize) * 1.1);
   color: var(--secondaryColor);
+  font-size: var(--baseFontSize);
+
   &::before,
   &::after {
     content: "\f068";
-    // display: inline-flex;
     align-items: center;
     justify-content: center;
     width: 100%;
+    height: 100%;
     position: absolute;
     transition: 0.3s linear 0s all;
     font-family: "Font Awesome 6 Free";
@@ -26,7 +27,7 @@
     font-style: normal;
     font-feature-settings: normal;
     font-variant: normal;
-    line-height: 1;
+    line-height: var(--baseFontSize);
     text-rendering: auto;
     font-weight: 900;
   }
@@ -38,4 +39,8 @@
 
 .collapsible {
   overflow: hidden;
+}
+
+.header {
+  width: calc(100% - 25px);
 }

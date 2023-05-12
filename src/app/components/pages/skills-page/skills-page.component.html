@@ -13,12 +13,18 @@
         <span class="progress-items" *ngFor="let skill of techSkills">
           <span class="progress-label">{{ skill.name }}</span>
           <span class="progress-width-container">
-            <span
+            <div
               class="progress-width"
-              [style.width]="skill.proficiency + '%'"
+              [style.height]="skill.proficiency + '%'"
             >
-              <span class="text-value">{{ skill.proficiency / 10 }} / 10</span>
-            </span>
+              <span class="text-value">{{ skill.proficiency / 10 }}/10</span>
+            </div>
+            <div
+              class="progress-width"
+              [style.height]="(skill.experience / 6.5) * 100 + '%'"
+            >
+              <span class="text-value">{{ skill.experience }} years</span>
+            </div>
           </span>
         </span>
       </div>
@@ -33,16 +39,22 @@
       [icon]="'fa-solid fa-suitcase'"
       [label]="'Libraries / Frameworks'"
     >
-      <div class="progress-container">
+      <div class="progress-container d-flex">
         <span class="progress-items" *ngFor="let skill of libSkills">
           <span class="progress-label">{{ skill.name }}</span>
           <span class="progress-width-container">
-            <span
+            <div
               class="progress-width"
-              [style.width]="skill.proficiency + '%'"
+              [style.height]="skill.proficiency + '%'"
             >
-              <span class="text-value">{{ skill.proficiency / 10 }} / 10</span>
-            </span>
+              <span class="text-value">{{ skill.proficiency / 10 }}/10</span>
+            </div>
+            <div
+              class="progress-width"
+              [style.height]="(skill.experience / 6.5) * 100 + '%'"
+            >
+              <span class="text-value">{{ skill.experience }} years</span>
+            </div>
           </span>
         </span>
       </div>

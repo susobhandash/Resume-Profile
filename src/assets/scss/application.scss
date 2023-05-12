@@ -60,6 +60,13 @@
 
     .right-section {
       width: 33.33%;
+
+      > .side-panel {
+        background-color: var(--secondaryBg);
+        border-radius: 25px;
+        height: 100%;
+        overflow: auto;
+      }
     }
   }
 }
@@ -90,8 +97,8 @@
   font-size: var(--baseFontSize);
   line-height: var(--baseFontSize);
   margin: 0;
-  font-family: "gothic", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  // font-family: "gothic", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+  //   "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   padding: var(--spacing);
   background: var(--lightBorder);
 }
@@ -118,7 +125,7 @@
   padding: 20px;
   border: 1px solid var(--tertiaryColor);
   color: var(--tertiaryColor);
-  border-radius: 50px;
+  @include mixins.border-radius(50px);
   background-color: var(--primaryBg);
   margin-right: var(--spacing);
   margin-bottom: var(--spacing);
@@ -126,53 +133,80 @@
   transition: all linear 0.2s;
 
   &:hover {
-    background: linear-gradient(90deg, var(--tertiaryColorLt) 0%, var(--tertiaryColorLt) 10%, var(--tertiaryColor) 80%);
-    // background-color: var(--tertiaryColor);
+    background: linear-gradient(
+      90deg,
+      var(--tertiaryColorLt) 0%,
+      var(--tertiaryColorLt) 10%,
+      var(--tertiaryColor) 80%
+    );
     color: var(--primaryBg);
   }
 }
 
 .progress-container {
   display: flex;
-  flex-direction: column;
+  align-items: flex-end;
+  background-color: var(--primaryBg);
+  @include mixins.border-radius(15px);
+  overflow: auto;
+  padding-top: 10px;
+  // flex-direction: column;
 
   > .progress-items {
     flex: 1 1 0;
     display: inline-flex;
     align-items: center;
     margin-bottom: 10px;
+    flex-direction: column-reverse;
+    width: 70px;
 
     > .progress-label {
-      width: 90px;
-      min-width: 90px;
-      max-width: 90px;
-      text-align: right;
-      margin-right: 10px;
+      height: 40px;
+      min-width: 70px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      text-align: center;
+      border-top: 1px solid var(--lightBorder);
+      font-weight: 300;
+      width: 100%;
     }
 
     > .progress-width-container {
       width: calc(100% - 100px);
       position: relative;
-      background-color: var(--primaryBg);
-      @include mixins.border-radius(15px);
-      height: 20px;
+      height: 150px;
+      overflow: hidden;
+      width: 45px;
+      display: flex;
+      align-items: flex-end;
+
       > .progress-width {
-        width: 0%;
-        display: inline-block;
+        width: 20px;
+        display: block;
         transition: all linear 0.3s;
-        height: 20px;
-        // border-right: 2px solid var(--secondaryColorLt);
-        border-radius: 10px;
-        background: linear-gradient(90deg, var(--secondaryColorLt) 0%, var(--primaryColorLt) 40%, var(--primaryColor) 100%);
+        height: 0px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        background: linear-gradient(
+          0deg,
+          var(--secondaryColorLt) 0%,
+          var(--primaryColorLt) 40%,
+          var(--primaryColor) 100%
+        );
         background-size: 200% 200%;
         animation: gradient 15s ease infinite;
         font-weight: 500;
-        font-size: 10px;
-        line-height: 20px;
+        font-size: 12px;
+
+        &:nth-child(1) {
+          margin-right: 5px;
+        }
 
         > .text-value {
-          position: absolute;
-          right: 10px;
+          writing-mode: vertical-lr;
+          line-height: 21px;
+          padding-top: 5px;
         }
       }
     }
@@ -187,25 +221,25 @@
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
 }
 
 // Custom
 .card.covid-ng {
   height: 250px;
   margin: 0 auto;
-  background-image: url('../images/Covid-Angular.png');
+  background-image: url("../images/Covid-Angular.png");
 }
 .card.covid-react {
   height: 250px;
   margin: 0 auto;
-  background-image: url('../images/Covid-React.png');
+  background-image: url("../images/Covid-React.png");
 }

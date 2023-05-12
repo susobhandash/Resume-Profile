@@ -1,14 +1,14 @@
 <a
   href="javascript:void[0]"
-  class="expand-collapse-container d-flex align-center secondary-color {{
+  class="expand-collapse-container d-f a-c secondary-color {{
     headerStyleClass
   }}"
   (click)="change()"
   [ngClass]="{ 'justify-between pr-s': showPlus, 'b-b': model }"
   [attr.id]="id"
 >
-  <span class="w-100 d-flex align-center">
-    <span class="mr-s" [ngClass]="icon" *ngIf="icon"></span>
+  <span class="d-f a-c header">
+    <span class="mr-sm" [ngClass]="icon" *ngIf="icon"></span>
     <span
       class="fas fa-chevron-down rotate-icon {{ styleClass }}"
       [ngClass]="{ rotate: model }"
@@ -17,7 +17,7 @@
     <span
       class="{{ styleClass }}"
       *ngIf="label"
-      [ngClass]="{ 'pl-5': !showPlus }"
+      [ngClass]="{ 'pl-sm': !showPlus }"
     >
       {{label}}
     </span>
