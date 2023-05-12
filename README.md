@@ -11,7 +11,9 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 Open the folder situated inside `src\assets\data` and edit individual file, without disturing the Object structure. Fill in your details that you want to see reflected in the application.
 
-Change the title in app.component.html to our name.
+Any images you want to add, you can put in `src\assets\images` folder and add the related css styles in `application.scss` file.
+
+Change the title in `app.component.html` to our name.
 
 ## Further help
 
