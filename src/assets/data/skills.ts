@@ -20,8 +20,11 @@ const techSkills = [
         proficiency: 80,
         versions: ['7','8','9','10','11','12','13','14']
     },
-    
-    
+    {
+        name: 'ReactJS',
+        experience: 1,
+        proficiency: 30
+    },
 ];
 
 export default techSkills;
@@ -57,11 +60,6 @@ export const libSkills = [
         experience: 2,
         proficiency: 70
     },
-    {
-        name: 'ReactJS',
-        experience: 0.5,
-        proficiency: 30
-    },
 ];
 
-export const softSkills = ['Agile', 'Sprint', 'JIRA', 'Confluence', 'Azure Devops', 'GIT', 'SVN', 'Bitbucket', 'Github Desktop', 'Sourcetree', 'TortoiseGit', 'Jenkins'];
+export const softSkills = ['Agile', 'Sprint', 'JIRA', 'Confluence', 'Azure Devops', 'GIT', 'SVN', 'Bitbucket', 'Github Desktop', 'Sourcetree', 'TortoiseGit', 'Jenkins', 'VS Code', 'Visual Studio'];

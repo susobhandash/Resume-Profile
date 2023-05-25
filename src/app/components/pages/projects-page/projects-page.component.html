@@ -14,6 +14,10 @@
             <span class="fw-400 pr-sm">Description:</span>
             {{item.description}}
           </p>
+          <p class="mt-sm fw-200" *ngIf="item.duration">
+            <span class="fw-400 pr-sm">Duration:</span>
+            <span>{{item.duration}}</span>
+          </p>
           <p class="mt-sm fw-200">
             <span class="fw-400 pr-sm">Technology:</span>
             <span *ngFor="let tech of item.technology">{{tech}}, </span>
