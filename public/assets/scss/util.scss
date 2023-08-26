@@ -1,0 +1,427 @@
+@use "mixins";
+
+// ------------------------------------------------------ Display Utilities ------------------------------------------------------
+.d-f {
+  display: flex;
+}
+
+.d-i-f {
+  display: inline-flex;
+}
+
+.d-b {
+  display: block;
+}
+
+.d-i-b {
+  display: inline-block;
+}
+
+.d-i {
+  display: inline;
+}
+
+.fd-col {
+  flex-direction: column;
+}
+
+// ------------------------------------------------------ Position Utilities ------------------------------------------------------
+.p-a {
+  position: absolute;
+}
+
+.p-f {
+  position: fixed;
+}
+
+.p-r {
+  position: relative;
+}
+
+.p-stk {
+  position: sticky;
+}
+
+.p-s {
+  position: static;
+}
+
+// ------------------------------------------------------ Spacing Utilities - Padding ------------------------------------------------------
+.p-md {
+  padding: var(--spacing);
+}
+
+.p-lg {
+  padding: calc(2 * var(--spacing));
+}
+
+.p-sm {
+  padding: calc(0.5 * var(--spacing));
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.pl-md {
+  padding-left: var(--spacing);
+}
+
+.pl-lg {
+  padding-left: calc(2 * var(--spacing));
+}
+
+.pl-sm {
+  padding-left: calc(0.5 * var(--spacing));
+}
+
+.pl-0 {
+  padding-left: 0;
+}
+
+.pr-md {
+  padding-right: var(--spacing);
+}
+
+.pr-lg {
+  padding-right: calc(2 * var(--spacing));
+}
+
+.pr-sm {
+  padding-right: calc(0.5 * var(--spacing));
+}
+
+.pr-0 {
+  padding-right: 0;
+}
+
+.pt-md {
+  padding-top: var(--spacing);
+}
+
+.pt-lg {
+  padding-top: calc(2 * var(--spacing));
+}
+
+.pt-sm {
+  padding-top: calc(0.5 * var(--spacing));
+}
+
+.pt-0 {
+  padding-top: 0;
+}
+
+.pb-md {
+  padding-bottom: var(--spacing);
+}
+
+.pb-lg {
+  padding-bottom: calc(2 * var(--spacing));
+}
+
+.pb-sm {
+  padding-bottom: calc(0.5 * var(--spacing));
+}
+
+.pb-0 {
+  padding-bottom: 0;
+}
+
+// ------------------------------------------------------ Spacing Utilities - Margin ------------------------------------------------------
+
+.m-md {
+  margin: var(--spacing);
+}
+
+.m-lg {
+  margin: calc(2 * var(--spacing));
+}
+
+.m-sm {
+  margin: calc(0.5 * var(--spacing));
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.ml-md {
+  margin-left: var(--spacing);
+}
+
+.ml-lg {
+  margin-left: calc(2 * var(--spacing));
+}
+
+.ml-sm {
+  margin-left: calc(0.5 * var(--spacing));
+}
+
+.ml-0 {
+  margin-left: 0;
+}
+
+.mr-md {
+  margin-right: var(--spacing);
+}
+
+.mr-lg {
+  margin-right: calc(2 * var(--spacing));
+}
+
+.mr-sm {
+  margin-right: calc(0.5 * var(--spacing));
+}
+
+.mr-0 {
+  margin-right: 0;
+}
+
+.mt-md {
+  margin-top: var(--spacing);
+}
+
+.mt-lg {
+  margin-top: calc(2 * var(--spacing));
+}
+
+.mt-sm {
+  margin-top: calc(0.5 * var(--spacing));
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mb-md {
+  margin-bottom: var(--spacing);
+}
+
+.mb-lg {
+  margin-bottom: calc(2 * var(--spacing));
+}
+
+.mb-sm {
+  margin-bottom: calc(0.5 * var(--spacing));
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+// ------------------------------------------------------ Border ------------------------------------------------------
+.b-l-lt {
+  border-left: 1px solid var(--lightBorder);
+}
+
+.b-r-lt {
+  border-right: 1px solid var(--lightBorder);
+}
+
+.b-t-lt {
+  border-top: 1px solid var(--lightBorder);
+}
+
+.b-b-lt {
+  border-bottom: 1px solid var(--lightBorder);
+}
+
+.border-lt {
+  border: 1px solid var(--lightBorder);
+}
+
+.b-l {
+  border-left: 1px solid var(--darkBorder);
+}
+
+.b-r {
+  border-right: 1px solid var(--darkBorder);
+}
+
+.b-t {
+  border-top: 1px solid var(--darkBorder);
+}
+
+.b-b {
+  border-bottom: 1px solid var(--darkBorder);
+}
+
+.border {
+  border: 1px solid var(--darkBorder);
+}
+
+// ------------------------------------------------------ Border Radius ------------------------------------------------------
+.br-5 {
+  @include mixins.border-radius(5px);
+}
+
+.br-12 {
+  @include mixins.border-radius(12px);
+}
+
+.br-20 {
+  @include mixins.border-radius(20px);
+}
+
+// ------------------------------------------------------ Shapes ------------------------------------------------------
+.circle {
+  @include mixins.border-radius(50%);
+}
+
+.cards {
+  @include mixins.border-radius(15px);
+}
+
+// ------------------------------------------------------ Alignment ------------------------------------------------------
+.a-c {
+  align-items: center;
+}
+
+.left {
+  text-align     : left;
+  justify-content: flex-start;
+}
+
+.right {
+  text-align     : right;
+  justify-content: flex-end;
+}
+
+.center {
+  text-align: center;
+  justify-content: center;
+}
+
+.ta-justify {
+  text-align: justify;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+// ------------------------------------------------------ Fonts ------------------------------------------------------
+body {
+  font-size          : calc(0.9 * var(--baseFontSize));
+  line-height        : calc(1.25 * var(--baseFontSize));
+  font-family        : 'Poppins', sans-serif;
+  font-style         : normal;
+  font-stretch       : normal;
+  font-optical-sizing: none;
+}
+
+h1 {
+  font-size  : calc(2.168 * var(--baseFontSize));
+  line-height: calc(2.168 * var(--baseFontSize));
+  margin     : 0;
+  font-weight: 400;
+  font-family: 'gothic', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  font-size  : calc(1.168 * var(--baseFontSize));
+  line-height: calc(1.168 * var(--baseFontSize));
+  margin     : 0;
+  font-weight: 400;
+  font-family: 'gothic', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h3 {
+  font-size  : var(--baseFontSize);
+  line-height: var(--baseFontSize);
+  margin     : 0;
+  font-family: 'gothic', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+// ------------------------------------------------------ Colors ------------------------------------------------------
+.text-primary {
+  color: var(--primaryColor);
+}
+
+.text-primary-lt {
+  color: var(--primaryColorLt);
+}
+
+// ------------------------------------------------------ Font Weight ------------------------------------------------------
+.fw-200 {
+  font-weight: 200;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.text-lg {
+  font-size  : calc(1.5 * var(--baseFontSize));
+  line-height: calc(1.6 * var(--baseFontSize));
+}
+
+.text-md {
+  font-size  : calc(0.9 * var(--baseFontSize));
+  line-height: calc(1.25 * var(--baseFontSize));
+}
+
+.text-sm {
+  font-size  : calc(0.8 * var(--baseFontSize));
+  line-height: calc(0.9 * var(--baseFontSize));
+}
+
+a {
+  font-weight: 400;
+  color: var(--primaryColor);
+}
+
+// ------------------------------------------------------ Scroll ------------------------------------------------------
+.o-auto {
+  overflow: auto;
+}
+
+*::-webkit-scrollbar {
+  width : 16px;
+  height: 16px;
+}
+
+*::-webkit-scrollbar-corner,
+*::-webkit-scrollbar-track {
+  background-color: #69707d0d;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #69707d4d;
+  border          : 6px solid transparent;
+  background-clip : content-box;
+}
+
+// ------------------------------------------------------ Widths ------------------------------------------------------
+.bg-primary {
+  background: var(--primaryBg);
+}
+.bg-secondary {
+  background: var(--secondaryBg);
+}
+
+// ------------------------------------------------------ Widths ------------------------------------------------------
+.w-100 {
+  width: 100%;
+}
+
+// ------------------------------------------------------ Overrides ------------------------------------------------------
+::marker {
+  color: var(--primaryColor);
+}

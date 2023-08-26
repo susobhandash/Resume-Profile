@@ -1,0 +1,14 @@
+@media only screen and (orientation: portrait) {
+  :root {
+    --baseFontSize: 0.9rem;
+    --spacing: 1em;
+  }
+
+  body {
+    padding: calc(var(--baseFontSize) * 0.75);
+
+    .container {
+      height: calc(var(--app-height) - (5 * var(--baseFontSize)));
+    }
+  }
+}
