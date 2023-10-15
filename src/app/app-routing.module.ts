@@ -4,6 +4,7 @@ import { AboutMePageComponent } from './components/pages/about-me-page/about-me-
 import { ProjectsPageComponent } from './components/pages/projects-page/projects-page.component';
 import { SkillsPageComponent } from './components/pages/skills-page/skills-page.component';
 import { ContactPageComponent } from './components/pages/contact-page/contact-page.component';
+import { ToggleThemeComponent } from './components/generic/toggle-theme/toggle-theme.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -11,11 +12,12 @@ const routes: Routes = [
   { path: 'projects', component: ProjectsPageComponent },
   { path: 'skills', component: SkillsPageComponent },
   { path: 'contact', component: ContactPageComponent },
+  { path: 'theme', component: ToggleThemeComponent },
   { path: '**', redirectTo: 'home', pathMatch: 'full' },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, {})],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

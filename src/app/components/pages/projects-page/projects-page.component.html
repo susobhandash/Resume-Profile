@@ -1,35 +1,45 @@
 <!-- <ng-template #projects> -->
-    <h1 class="text-primary mb-sm">Projects</h1>
-    <div class="scroll-section">
-      <div class="ta-justify p-sm panel-enclosure mb-md" *ngFor="let item of projects">
-        <app-expand-collapse
-          class="d-block w-100"
-          [(model)]="item.expanded"
-          [showPlus]="true"
-          [headerStyleClass]="'project-sticky-header text-primary'"
-          [icon]="item.icon"
-          [label]="item.label"
-        >
-          <p class="mt-sm fw-200">
-            <span class="fw-400 pr-sm">Description:</span>
-            {{item.description}}
-          </p>
-          <p class="mt-sm fw-200" *ngIf="item.duration">
-            <span class="fw-400 pr-sm">Duration:</span>
-            <span>{{item.duration}}</span>
-          </p>
-          <p class="mt-sm fw-200">
-            <span class="fw-400 pr-sm">Technology:</span>
-            <span *ngFor="let tech of item.technology">{{tech}}, </span>
-          </p>
-          <p class="mt-sm fw-200">
-            <span class="fw-400 pr-sm">Responsibility:</span>
-            {{item.responsibilty}}
-          </p>
-          <ul class="ml-0">
-            <li *ngFor="let detail of item.detail" [innerHTML]="detail"></li>
-          </ul>
-        </app-expand-collapse>
+<h1 class="text-primary mb-sm">Projects</h1>
+<div class="scroll-section">
+  <div
+    class="ta-justify p-sm panel-enclosure mb-md"
+    *ngFor="let item of projects"
+  >
+    <app-expand-collapse
+      class="d-block w-100"
+      [(model)]="item.expanded"
+      [showPlus]="true"
+      [headerStyleClass]="'project-sticky-header text-primary'"
+      [icon]="item.icon"
+      [label]="item.label"
+    >
+      <p class="mt-sm fw-200 p-sm">
+        <span class="fw-400 pr-sm">Description:</span>
+        {{ item.description }}
+      </p>
+      <p class="mt-sm fw-200 p-sm" *ngIf="item.duration">
+        <span class="fw-400 pr-sm">Duration:</span>
+        <span>{{ item.duration }}</span>
+      </p>
+      <p class="mt-sm fw-200 p-sm">
+        <span class="fw-400 pr-sm">Technology:</span>
+        <span *ngFor="let tech of item.technology">{{ tech }}, </span>
+      </p>
+      <p class="mt-sm fw-200 p-sm">
+        <span class="fw-400 pr-sm">Responsibility:</span>
+        {{ item.responsibilty }}
+      </p>
+      <ul class="ml-0">
+        <li *ngFor="let detail of item.detail" [innerHTML]="detail"></li>
+      </ul>
+      <div class="project-preview" *ngIf="item.preview">
+        <a [attr.href]="item.preview.url" target="_blank">
+          <div class="card" [ngClass]="item.preview.photo">
+            <img src="../../../../assets/images/{{ item.preview.image }}" />
+          </div>
+        </a>
       </div>
-    </div>
-  <!-- </ng-template> -->
+    </app-expand-collapse>
+  </div>
+</div>
+<!-- </ng-template> -->

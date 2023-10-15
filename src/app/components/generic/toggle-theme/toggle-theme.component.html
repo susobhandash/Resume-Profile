@@ -1,0 +1,27 @@
+<h1 class="text-primary mb-sm">Select Theme</h1>
+<div class="scroll-section">
+  <div class="card bg-primary p-md mb-md">
+    <h3 class="mb-md">Theme Modes:</h3>
+    <span class="d-i-b">
+      <span
+        class="tag c-p"
+        *ngFor="let mode of themeModes"
+        (click)="gs.activeThemeMode = mode; themeModeToggled()"
+        [ngClass]="{ active: mode.value === gs.activeThemeMode.value }"
+        >{{ mode.text }}</span
+      >
+    </span>
+  </div>
+  <div class="card bg-primary p-md">
+    <h3 class="mb-md">Theme Colors:</h3>
+    <span class="d-i-b">
+      <span
+        class="tag c-p"
+        *ngFor="let theme of themeOptions"
+        (click)="gs.activeTheme = theme; themeChanged()"
+        [ngClass]="{ active: theme.value === gs.activeTheme.value }"
+        >{{ theme.text }}</span
+      >
+    </span>
+  </div>
+</div>

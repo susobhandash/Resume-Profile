@@ -4,7 +4,7 @@
 
 .container {
   background-color: var(--primaryBg);
-  height: calc(var(--app-height) - (4 * var(--baseFontSize)));
+  height: calc(var(--app-height) - 2.5 * var(--spacing));
   @include mixins.border-radius(25px);
 
   .page-content {
@@ -22,6 +22,7 @@
       height: calc(
         var(--app-height) - (5 * var(--baseFontSize)) - (2 * var(--spacing))
       );
+      width: 100%;
 
       .scroll-section {
         height: calc(
@@ -29,12 +30,28 @@
             (2.168 * var(--baseFontSize))
         );
         overflow: auto;
+
+        > .panel-enclosure {
+          background-color: var(--secondaryBg);
+          > app-expand-collapse > .project-sticky-header {
+            background-color: var(--secondaryBg);
+          }
+        }
+
+        > .card.bg-primary {
+          background-color: var(--secondaryBg);
+        }
+
+        .tag:not(.active):not(:hover) {
+          background-color: var(--primaryColorLt);
+        }
       }
     }
 
     .left-section {
       display: flex;
-      width: 66.66%;
+      flex-basis: 66.66%;
+      flex-grow: 1;
       background-color: var(--secondaryBg);
       @include mixins.border-radius(25px);
 
@@ -59,7 +76,8 @@
     }
 
     .right-section {
-      width: 33.33%;
+      flex-basis: 33.33%;
+      flex-grow: 1;
 
       > .side-panel {
         background-color: var(--secondaryBg);
@@ -89,7 +107,7 @@
   position: sticky;
   z-index: 1;
   top: 0px;
-  background: var(--secondaryBg);
+  background: var(--primaryBg);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -100,13 +118,12 @@
   // font-family: "gothic", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
   //   "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   padding: var(--spacing);
-  background: var(--lightBorder);
 }
 
 .panel-enclosure {
   @include mixins.border-radius(15px);
   overflow: visible;
-  background: var(--lightBorder);
+  background: var(--primaryBg);
 }
 
 .bottom-nav {
@@ -122,24 +139,27 @@
   min-width: 70px;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: var(--spacing);
   border: 1px solid var(--tertiaryColor);
-  color: var(--tertiaryColor);
+  color: var(--primaryColor);
   @include mixins.border-radius(50px);
-  background-color: var(--primaryBg);
+  background-color: var(--secondaryColorLt);
   margin-right: var(--spacing);
   margin-bottom: var(--spacing);
-  font-weight: 400;
+  font-weight: 500;
   transition: all linear 0.2s;
 
-  &:hover {
-    background: linear-gradient(
-      90deg,
-      var(--tertiaryColorLt) 0%,
-      var(--tertiaryColorLt) 10%,
-      var(--tertiaryColor) 80%
-    );
-    color: var(--primaryBg);
+  &:hover,
+  &.active {
+    // background: linear-gradient(
+    //   90deg,
+    //   var(--tertiaryColorLt) 0%,
+    //   var(--tertiaryColorLt) 10%,
+    //   var(--tertiaryColor) 80%
+    // );
+    border-color: var(--primaryColor);
+    background: var(--primaryColor);
+    color: var(--primaryColorLt);
   }
 }
 
@@ -170,6 +190,7 @@
       border-top: 1px solid var(--lightBorder);
       font-weight: 300;
       width: 100%;
+      color: var(--secondaryColor);
     }
 
     > .progress-width-container {
@@ -191,7 +212,7 @@
         background: linear-gradient(
           0deg,
           var(--secondaryColorLt) 0%,
-          var(--primaryColorLt) 40%,
+          var(--tertiaryColor) 40%,
           var(--primaryColor) 100%
         );
         background-size: 200% 200%;
@@ -233,20 +254,26 @@
 }
 
 // Custom
-.card.covid-ng {
-  height: 250px;
-  margin: 0 auto;
-  background-image: url("../images/Covid-Angular.png");
-}
-.card.covid-react {
-  height: 250px;
-  margin: 0 auto;
-  background-image: url("../images/Covid-React.png");
-}
-.card.health-ng {
-  height: 250px;
-  margin: 0 auto;
-  background-image: url("../images/health.png");
-  background-position: center center;
-  background-size: contain;
+.project-preview {
+  width: 100%;
+
+  > a {
+    display: contents;
+
+    > .card {
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+
+      > img {
+        height: 100%;
+        border-radius: 5px;
+        box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+          0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+          0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+      }
+    }
+  }
 }

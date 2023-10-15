@@ -5,17 +5,18 @@ import { GlobalService } from './services/global.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
   title = 'Susobhan Dash Resume';
   name = 'Susobhan';
 
   navBarItems = [
-    {label: 'About Me', icon: 'fas fa-user', link: '/home'},
-    {label: 'Projects', icon: 'fas fa-code-fork', link: '/projects'},
-    {label: 'Skills', icon: 'fas fa-list-check', link: '/skills'},
-    {label: 'Contact', icon: 'fas fa-phone', link: '/contact'},
+    { label: 'About Me', icon: 'fas fa-user', link: '/home' },
+    { label: 'Projects', icon: 'fas fa-code-fork', link: '/projects' },
+    { label: 'Skills', icon: 'fas fa-list-check', link: '/skills' },
+    { label: 'Contact', icon: 'fas fa-phone', link: '/contact' },
+    { label: 'Theme', icon: 'fas fa-palette', link: '/theme' },
   ];
   activeIdx = 0;
   deviceInfo = null;
@@ -23,7 +24,8 @@ export class AppComponent {
   @HostListener('window:orientationchange', ['$event'])
   onOrientationChange(event) {
     setTimeout(() => {
-      let orientation = event.target.orientation === 90 ? 'landscape' : 'portrait';
+      let orientation =
+        event.target.orientation === 90 ? 'landscape' : 'portrait';
       this.checkDeviceType(orientation);
     }, 250);
   }
@@ -49,7 +51,10 @@ export class AppComponent {
 
       // remove this code for production
       if (isDevMode()) {
-        this.globalService.deviceType = this.globalService.deviceOrientation == 'portrait' ? 'mobile' : 'tablet';
+        this.globalService.deviceType =
+          this.globalService.deviceOrientation == 'portrait'
+            ? 'mobile'
+            : 'tablet';
       }
     } else {
       this.globalService.deviceOrientation = orientation;

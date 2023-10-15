@@ -69,8 +69,12 @@ const data = [
       'Responsive Layout for mobile views supported',
       'Provided quick navigation between states in the Detail page',
       'Integrated ChartJS to display data (currently not working as APIs are not getting updated any more)',
-      '<a target="_blank" href="https://covid-react-ten.vercel.app/"><div class="card covid-react"></div></a>',
     ],
+    preview: {
+      url: 'https://covid-react-ten.vercel.app/',
+      photo: 'covid-react',
+      image: 'Covid-Angular.png',
+    },
   },
   {
     label: 'Personal Projects (2) : Covid Dashboard (Angular)',
@@ -88,8 +92,12 @@ const data = [
       'Clicking on top case types, sorts District data based on same type',
       'Collapsible sections to hide unwanted data',
       'Easy switching of States from dropdown',
-      '<a target="_blank" href="https://covid-angular.susobhandash.vercel.app/home"><div class="card covid-ng"></div></a>',
     ],
+    preview: {
+      url: 'https://covid-angular.susobhandash.vercel.app/home',
+      photo: 'covid-ng',
+      image: 'Covid-React.png',
+    },
   },
   {
     label: 'Personal Projects (3) : Health Detail Tracking (Angular)',
@@ -113,8 +121,52 @@ const data = [
       'Can be used per user based on login',
       'Idea is to bring in more health tracking modules',
       'Fuure idea is to make it an Android app, using React Native maybe ?',
-      '<a target="_blank" href="http://healthdetailstracking.web.app/"><div class="card health-ng"></div></a>',
     ],
+    preview: {
+      url: 'http://healthdetailstracking.web.app/',
+      photo: 'health-ng',
+      image: 'health.png',
+    },
+  },
+  {
+    label: 'Personal Projects (4) : Primeng Custom Theming',
+    icon: 'fa-solid fa-user',
+    expanded: false,
+    description: 'Custom theming for PrimeNg components',
+    technology: ['Angular', 'HTML', 'SCSS', 'PrimeNg'],
+    responsibilty:
+      'Built this application using Angular with PrimeNg to style it components based on dynamic theming.',
+    detail: [
+      'Provided theme switching capability',
+      'Responsive Layout for mobile views supported',
+      'Created multple custom themes based on Google AI Search palettes',
+      'Can be toggled between Dark and Light mode of same color theme',
+    ],
+    preview: {
+      url: 'http://primeng-custom-themes.vercel.app',
+      photo: 'primeng-theme-ng',
+      image: 'primeng-theme.jpeg',
+    },
+  },
+  {
+    label: 'Personal Projects (5) : Angular Material Custom Theming',
+    icon: 'fa-solid fa-user',
+    expanded: false,
+    description: 'Custom theming for Angular Material components',
+    technology: ['Angular', 'HTML', 'SCSS', 'Angular Material'],
+    responsibilty:
+      'Built this application using Angular with Angular Material to style it components based on dynamic theming.',
+    detail: [
+      'Provided theme switching capability',
+      'Responsive Layout for mobile views supported',
+      'Created multple custom themes based on Angular Material Color Palette Generator',
+      'Can be toggled between Dark and Light mode of same color theme',
+    ],
+    preview: {
+      url: 'http://angular-material-custom-theme.vercel.app',
+      photo: 'material-theme-ng',
+      image: 'material-theme.jpeg',
+    },
   },
 ];
 

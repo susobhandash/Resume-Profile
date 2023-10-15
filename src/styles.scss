@@ -1,22 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./assets/themes/aqua";
+@import "./assets/themes/blue";
+@import "./assets/themes/brown";
+@import "./assets/themes/dark-blue";
+@import "./assets/themes/dark-green";
+@import "./assets/themes/green";
+@import "./assets/themes/indigo";
+@import "./assets/themes/orange";
+@import "./assets/themes/pink-red";
+@import "./assets/themes/purple";
+@import "./assets/themes/red";
+@import "./assets/themes/teal";
+@import "./assets/themes/violet";
+@import "./assets/themes/yellow-brown";
+
 html,
 body {
   margin: 0;
   overflow: hidden;
+  background-color: var(--mc1);
 }
 
 body {
-  padding: calc(2 * var(--baseFontSize));
-  background: rgb(255, 205, 170);
-  background: linear-gradient(
-    135deg,
-    rgba(255, 205, 170, 1) 0%,
-    rgba(235, 188, 254, 1) 100%
-  );
+  padding: calc(1.25 * var(--spacing));
+  // background: rgb(255, 205, 170);
+  // background: linear-gradient(
+  //   135deg,
+  //   rgba(255, 205, 170, 1) 0%,
+  //   rgba(235, 188, 254, 1) 100%
+  // );
   height: calc(var(--app-height));
   width: calc(100vw);
   font-family: "Poppins", sans-serif;
   font-weight: 200;
+  color: var(--primaryText);
   // font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -27,23 +44,21 @@ body,
 }
 
 // Varibles
-:root {
-  --primaryColor: #eb5b8c;
-  --primaryColorLt: #f7b7d3;
-  --secondaryColor: #f08cc5;
-  --secondaryColorLt: #f3bdf8;
-  --tertiaryColor: #ee7f51;
-  --tertiaryColorLt: #ffad72;
-  --primaryText: #362f53;
+body {
+  --primaryColor: var(--mc14);
+  --primaryColorLt: var(--mc2);
+  --secondaryColor: var(--mc5);
+  --secondaryColorLt: var(--mc3);
+  --tertiaryColor: var(--mc10);
+  --tertiaryColorLt: var(--mc3);
+  --primaryText: var(--mc14);
   --lightText: #a2a3b0;
-  --primaryBg: #fff;
-  --secondaryBg: #f5f2f7;
-  --darkBorder: #82808b;
-  --lightBorder: #e9e5ef;
+  --primaryBg: var(--mc2);
+  --secondaryBg: var(--mc3);
+  --darkBorder: var(--mc14);
+  --lightBorder: var(--mc15);
   --baseFontSize: 1rem;
   --spacing: 1em;
-  // --fontSize: 1em;
-  //#ffcdaa, #ebbcfe
 }
 
 // FONT
@@ -60,54 +75,80 @@ body,
 /* poppins-200 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 200;
-  src: url('./assets/fonts/poppins/poppins-v20-latin-200.eot'); /* IE9 Compat Modes */
-  src: url('./assets/fonts/poppins/poppins-v20-latin-200.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('./assets/fonts/poppins/poppins-v20-latin-200.woff2') format('woff2'), /* Super Modern Browsers */
-       url('./assets/fonts/poppins/poppins-v20-latin-200.woff') format('woff'), /* Modern Browsers */
-       url('./assets/fonts/poppins/poppins-v20-latin-200.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('./assets/fonts/poppins/poppins-v20-latin-200.svg#Poppins') format('svg'); /* Legacy iOS */
+  src: url("./assets/fonts/poppins/poppins-v20-latin-200.eot"); /* IE9 Compat Modes */
+  src: url("./assets/fonts/poppins/poppins-v20-latin-200.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("./assets/fonts/poppins/poppins-v20-latin-200.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("./assets/fonts/poppins/poppins-v20-latin-200.woff") format("woff"),
+    /* Modern Browsers */
+      url("./assets/fonts/poppins/poppins-v20-latin-200.ttf") format("truetype"),
+    /* Safari, Android, iOS */
+      url("./assets/fonts/poppins/poppins-v20-latin-200.svg#Poppins")
+      format("svg"); /* Legacy iOS */
 }
 /* poppins-300 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 300;
-  src: url('./assets/fonts/poppins/poppins-v20-latin-300.eot'); /* IE9 Compat Modes */
-  src: url('./assets/fonts/poppins/poppins-v20-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('./assets/fonts/poppins/poppins-v20-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
-       url('./assets/fonts/poppins/poppins-v20-latin-300.woff') format('woff'), /* Modern Browsers */
-       url('./assets/fonts/poppins/poppins-v20-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('./assets/fonts/poppins/poppins-v20-latin-300.svg#Poppins') format('svg'); /* Legacy iOS */
+  src: url("./assets/fonts/poppins/poppins-v20-latin-300.eot"); /* IE9 Compat Modes */
+  src: url("./assets/fonts/poppins/poppins-v20-latin-300.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("./assets/fonts/poppins/poppins-v20-latin-300.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("./assets/fonts/poppins/poppins-v20-latin-300.woff") format("woff"),
+    /* Modern Browsers */
+      url("./assets/fonts/poppins/poppins-v20-latin-300.ttf") format("truetype"),
+    /* Safari, Android, iOS */
+      url("./assets/fonts/poppins/poppins-v20-latin-300.svg#Poppins")
+      format("svg"); /* Legacy iOS */
 }
 /* poppins-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  src: url('./assets/fonts/poppins/poppins-v20-latin-regular.eot'); /* IE9 Compat Modes */
-  src: url('./assets/fonts/poppins/poppins-v20-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('./assets/fonts/poppins/poppins-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('./assets/fonts/poppins/poppins-v20-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('./assets/fonts/poppins/poppins-v20-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('./assets/fonts/poppins/poppins-v20-latin-regular.svg#Poppins') format('svg'); /* Legacy iOS */
+  src: url("./assets/fonts/poppins/poppins-v20-latin-regular.eot"); /* IE9 Compat Modes */
+  src: url("./assets/fonts/poppins/poppins-v20-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("./assets/fonts/poppins/poppins-v20-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("./assets/fonts/poppins/poppins-v20-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("./assets/fonts/poppins/poppins-v20-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("./assets/fonts/poppins/poppins-v20-latin-regular.svg#Poppins")
+      format("svg"); /* Legacy iOS */
 }
 /* poppins-500 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
-  src: url('./assets/fonts/poppins/poppins-v20-latin-500.eot'); /* IE9 Compat Modes */
-  src: url('./assets/fonts/poppins/poppins-v20-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('./assets/fonts/poppins/poppins-v20-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
-       url('./assets/fonts/poppins/poppins-v20-latin-500.woff') format('woff'), /* Modern Browsers */
-       url('./assets/fonts/poppins/poppins-v20-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('./assets/fonts/poppins/poppins-v20-latin-500.svg#Poppins') format('svg'); /* Legacy iOS */
+  src: url("./assets/fonts/poppins/poppins-v20-latin-500.eot"); /* IE9 Compat Modes */
+  src: url("./assets/fonts/poppins/poppins-v20-latin-500.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("./assets/fonts/poppins/poppins-v20-latin-500.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("./assets/fonts/poppins/poppins-v20-latin-500.woff") format("woff"),
+    /* Modern Browsers */
+      url("./assets/fonts/poppins/poppins-v20-latin-500.ttf") format("truetype"),
+    /* Safari, Android, iOS */
+      url("./assets/fonts/poppins/poppins-v20-latin-500.svg#Poppins")
+      format("svg"); /* Legacy iOS */
 }
 
 .poppins {

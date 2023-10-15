@@ -1,6 +1,6 @@
-/*!******************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].rules[0].oneOf[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].rules[0].oneOf[0].use[2]!./src/assets/fontawesome/css/all.css?ngGlobalStyle ***!
-  \******************************************************************************************************************************************************************************************************************************************/
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/css-loader@6.7.3_webpack@5.76.1/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[1]!./node_modules/.pnpm/postcss-loader@7.0.2_postcss@8.4.31_webpack@5.76.1/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[2]!./src/assets/fontawesome/css/all.css?ngGlobalStyle ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*!
  * Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -7788,13 +7788,13 @@ readers do not read off random characters that represent icons */
   src: url('fa-v4compatibility.woff2') format("woff2"), url('fa-v4compatibility.ttf') format("truetype");
   unicode-range: U+F041,U+F047,U+F065-F066,U+F07D-F07E,U+F080,U+F08B,U+F08E,U+F090,U+F09A,U+F0AC,U+F0AE,U+F0B2,U+F0D0,U+F0D6,U+F0E4,U+F0EC,U+F10A-F10B,U+F123,U+F13E,U+F148-F149,U+F14C,U+F156,U+F15E,U+F160-F161,U+F163,U+F175-F178,U+F195,U+F1F8,U+F219,U+F27A; }
 
-/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[5].rules[1].use[0]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[5].rules[1].use[1]!./src/assets/scss/mixins.scss?ngGlobalStyle ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/css-loader@6.7.3_webpack@5.76.1/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].rules[0].oneOf[0].use[1]!./node_modules/.pnpm/postcss-loader@7.0.2_postcss@8.4.31_webpack@5.76.1/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].rules[0].oneOf[0].use[2]!./node_modules/.pnpm/resolve-url-loader@5.0.0/node_modules/resolve-url-loader/index.js??ruleSet[1].rules[6].rules[1].use[0]!./node_modules/.pnpm/sass-loader@13.2.0_sass@1.58.1_webpack@5.76.1/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].rules[1].use[1]!./src/assets/scss/mixins.scss?ngGlobalStyle ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 
-/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[5].rules[1].use[0]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[5].rules[1].use[1]!./src/assets/scss/util.scss?ngGlobalStyle ***!
-  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/css-loader@6.7.3_webpack@5.76.1/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].rules[0].oneOf[0].use[1]!./node_modules/.pnpm/postcss-loader@7.0.2_postcss@8.4.31_webpack@5.76.1/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].rules[0].oneOf[0].use[2]!./node_modules/.pnpm/resolve-url-loader@5.0.0/node_modules/resolve-url-loader/index.js??ruleSet[1].rules[6].rules[1].use[0]!./node_modules/.pnpm/sass-loader@13.2.0_sass@1.58.1_webpack@5.76.1/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].rules[1].use[1]!./src/assets/scss/util.scss?ngGlobalStyle ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 .d-f {
   display: flex;
 }
@@ -8205,12 +8205,16 @@ a {
 ::marker {
   color: var(--primaryColor);
 }
-/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[5].rules[1].use[0]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[5].rules[1].use[1]!./src/assets/scss/application.scss?ngGlobalStyle ***!
-  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+.c-p {
+  cursor: pointer;
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/css-loader@6.7.3_webpack@5.76.1/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].rules[0].oneOf[0].use[1]!./node_modules/.pnpm/postcss-loader@7.0.2_postcss@8.4.31_webpack@5.76.1/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].rules[0].oneOf[0].use[2]!./node_modules/.pnpm/resolve-url-loader@5.0.0/node_modules/resolve-url-loader/index.js??ruleSet[1].rules[6].rules[1].use[0]!./node_modules/.pnpm/sass-loader@13.2.0_sass@1.58.1_webpack@5.76.1/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].rules[1].use[1]!./src/assets/scss/application.scss?ngGlobalStyle ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 .container {
   background-color: var(--primaryBg);
-  height: calc(var(--app-height) - 4 * var(--baseFontSize));
+  height: calc(var(--app-height) - 2.5 * var(--spacing));
   border-radius: 25px;
 }
 .container .page-content {
@@ -8222,14 +8226,28 @@ a {
 }
 .container .page-content.mobile-view {
   height: calc(var(--app-height) - 5 * var(--baseFontSize) - 2 * var(--spacing));
+  width: 100%;
 }
 .container .page-content.mobile-view .scroll-section {
   height: calc(var(--app-height) - 4 * var(--baseFontSize) - 5 * var(--spacing) - 2.168 * var(--baseFontSize));
   overflow: auto;
 }
+.container .page-content.mobile-view .scroll-section > .panel-enclosure {
+  background-color: var(--secondaryBg);
+}
+.container .page-content.mobile-view .scroll-section > .panel-enclosure > app-expand-collapse > .project-sticky-header {
+  background-color: var(--secondaryBg);
+}
+.container .page-content.mobile-view .scroll-section > .card.bg-primary {
+  background-color: var(--secondaryBg);
+}
+.container .page-content.mobile-view .scroll-section .tag:not(.active):not(:hover) {
+  background-color: var(--primaryColorLt);
+}
 .container .page-content .left-section {
   display: flex;
-  width: 66.66%;
+  flex-basis: 66.66%;
+  flex-grow: 1;
   background-color: var(--secondaryBg);
   border-radius: 25px;
 }
@@ -8248,7 +8266,8 @@ a {
   border-right: 2px solid var(--lightBorder);
 }
 .container .page-content .right-section {
-  width: 33.33%;
+  flex-basis: 33.33%;
+  flex-grow: 1;
 }
 .container .page-content .right-section > .side-panel {
   background-color: var(--secondaryBg);
@@ -8274,7 +8293,7 @@ a {
   position: sticky;
   z-index: 1;
   top: 0px;
-  background: var(--secondaryBg);
+  background: var(--primaryBg);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -8283,13 +8302,12 @@ a {
   line-height: var(--baseFontSize);
   margin: 0;
   padding: var(--spacing);
-  background: var(--lightBorder);
 }
 
 .panel-enclosure {
   border-radius: 15px;
   overflow: visible;
-  background: var(--lightBorder);
+  background: var(--primaryBg);
 }
 
 .bottom-nav {
@@ -8305,19 +8323,20 @@ a {
   min-width: 70px;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: var(--spacing);
   border: 1px solid var(--tertiaryColor);
-  color: var(--tertiaryColor);
+  color: var(--primaryColor);
   border-radius: 50px;
-  background-color: var(--primaryBg);
+  background-color: var(--secondaryColorLt);
   margin-right: var(--spacing);
   margin-bottom: var(--spacing);
-  font-weight: 400;
+  font-weight: 500;
   transition: all linear 0.2s;
 }
-.tag:hover {
-  background: linear-gradient(90deg, var(--tertiaryColorLt) 0%, var(--tertiaryColorLt) 10%, var(--tertiaryColor) 80%);
-  color: var(--primaryBg);
+.tag:hover, .tag.active {
+  border-color: var(--primaryColor);
+  background: var(--primaryColor);
+  color: var(--primaryColorLt);
 }
 
 .progress-container {
@@ -8346,6 +8365,7 @@ a {
   border-top: 1px solid var(--lightBorder);
   font-weight: 300;
   width: 100%;
+  color: var(--secondaryColor);
 }
 .progress-container > .progress-items > .progress-width-container {
   width: calc(100% - 100px);
@@ -8363,7 +8383,7 @@ a {
   height: 0px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  background: linear-gradient(0deg, var(--secondaryColorLt) 0%, var(--primaryColorLt) 40%, var(--primaryColor) 100%);
+  background: linear-gradient(0deg, var(--secondaryColorLt) 0%, var(--tertiaryColor) 40%, var(--primaryColor) 100%);
   background-size: 200% 200%;
   animation: gradient 15s ease infinite;
   font-weight: 500;
@@ -8396,43 +8416,957 @@ a {
     background-position: 50% 0%;
   }
 }
-.card.covid-ng {
-  height: 250px;
-  margin: 0 auto;
-  background-image: url('Covid-Angular.png');
+.project-preview {
+  width: 100%;
 }
-
-.card.covid-react {
-  height: 250px;
-  margin: 0 auto;
-  background-image: url('Covid-React.png');
+.project-preview > a {
+  display: contents;
 }
-
-.card.health-ng {
+.project-preview > a > .card {
   height: 250px;
-  margin: 0 auto;
-  background-image: url('health.png');
-  background-position: center center;
-  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
 }
-/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[5].rules[1].use[0]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[5].rules[1].use[1]!./src/styles.scss?ngGlobalStyle ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.project-preview > a > .card > img {
+  height: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/css-loader@6.7.3_webpack@5.76.1/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].rules[0].oneOf[0].use[1]!./node_modules/.pnpm/postcss-loader@7.0.2_postcss@8.4.31_webpack@5.76.1/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].rules[0].oneOf[0].use[2]!./node_modules/.pnpm/resolve-url-loader@5.0.0/node_modules/resolve-url-loader/index.js??ruleSet[1].rules[6].rules[1].use[0]!./node_modules/.pnpm/sass-loader@13.2.0_sass@1.58.1_webpack@5.76.1/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].rules[1].use[1]!./src/styles.scss?ngGlobalStyle ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /* You can add global styles to this file, and also import other style files */
+.light-mode.aqua {
+  --mc1: #ffffff;
+  --mc2: #ebf1f8;
+  --mc2t: 235, 241, 248;
+  --mc3: #d7e4ef;
+  --mc4: #001e2d;
+  --mc5: #001e2d;
+  --mc6: #4a607c;
+  --mc7: #007fb0;
+  --mc8: #d7e4ef;
+  --mc9: #c5d8e8;
+  --mc10: #81cfff;
+  --mc11: #001e2d;
+  --mc12: #001e2d;
+  --mc13: #001e2d;
+  --mc14: #007fb0;
+  --mc15: #4a607c;
+  --mc16: #b2c8e8;
+  --mc17: #b2c8e8;
+  --mc18: #b2c8e8;
+  --mc19: #009bd5;
+  --mc20: #009bd5;
+  --mc21: #ffffff;
+  --mc22: rgba(0, 0, 0, 0.6);
+  --mc23: #ffffff;
+  --mc24: #ffb2be;
+  --mc25: #b2c8e8;
+  --mc26: #5fbaff;
+  --mc27: #00344b;
+  --mc28: #e6f2fd;
+}
+
+.dark-mode.aqua {
+  --mc1: #1f1f1f;
+  --mc2: #2b3136;
+  --mc2t: 43, 49, 54;
+  --mc3: #3b434a;
+  --mc4: #e4f3ff;
+  --mc5: #e4f3ff;
+  --mc6: #bcc8d3;
+  --mc7: #81cfff;
+  --mc8: #2b3136;
+  --mc9: #3b434a;
+  --mc10: #004c6d;
+  --mc11: #e4f3ff;
+  --mc12: #e4f3ff;
+  --mc13: #e4f3ff;
+  --mc14: #81cfff;
+  --mc15: #bcc8d3;
+  --mc16: #546069;
+  --mc17: #546069;
+  --mc18: #546069;
+  --mc19: #81cfff;
+  --mc20: #81cfff;
+  --mc21: #1f1f1f;
+  --mc22: rgba(0, 0, 0, 0.6);
+  --mc23: #ffffff;
+  --mc24: #ffb2be;
+  --mc25: #b2c8e8;
+  --mc26: #5fbaff;
+  --mc27: #00344b;
+  --mc28: #2b3136;
+  color-scheme: dark;
+}
+
+.light-mode.blue {
+  --mc1: #ffffff;
+  --mc2: #eef0fa;
+  --mc2t: 238, 240, 250;
+  --mc3: #dce3f2;
+  --mc4: #001c39;
+  --mc5: #001c39;
+  --mc6: #004882;
+  --mc7: #0060ab;
+  --mc8: #dce3f2;
+  --mc9: #cbd5ec;
+  --mc10: #a3c9ff;
+  --mc11: #001c39;
+  --mc12: #001c39;
+  --mc13: #001c39;
+  --mc14: #0060ab;
+  --mc15: #004882;
+  --mc16: #a3c9ff;
+  --mc17: #a3c9ff;
+  --mc18: #a3c9ff;
+  --mc19: #0079d5;
+  --mc20: #0f93ff;
+  --mc21: #ffffff;
+  --mc22: rgba(0, 0, 0, 0.6);
+  --mc23: #ffffff;
+  --mc24: #f5b8af;
+  --mc25: #a3c9ff;
+  --mc26: #5fbaff;
+  --mc27: #00315c;
+  --mc28: #ebf1ff;
+}
+
+.dark-mode.blue {
+  --mc1: #1f1f1f;
+  --mc2: #2d3137;
+  --mc2t: 43, 49, 54;
+  --mc3: #3c4149;
+  --mc4: #ebf1ff;
+  --mc5: #ebf1ff;
+  --mc6: #c0c7d5;
+  --mc7: #a3c9ff;
+  --mc8: #2d3137;
+  --mc9: #3c4149;
+  --mc10: #234776;
+  --mc11: #ebf1ff;
+  --mc12: #ebf1ff;
+  --mc13: #ebf1ff;
+  --mc14: #a3c9ff;
+  --mc15: #c0c7d5;
+  --mc16: #575f6b;
+  --mc17: #575f6b;
+  --mc18: #575f6b;
+  --mc19: #a3c9ff;
+  --mc20: #a3c9ff;
+  --mc21: #1f1f1f;
+  --mc22: rgba(0, 0, 0, 0.6);
+  --mc23: #ffffff;
+  --mc24: #f5b8af;
+  --mc25: #a3c9ff;
+  --mc26: #5fbaff;
+  --mc27: #00315c;
+  --mc28: #2d3137;
+  color-scheme: dark;
+}
+
+.light-mode.brown {
+  --mc1: #ffffff;
+  --mc2: #fdf1ea;
+  --mc2t: 253, 241, 234;
+  --mc3: #fae3d1;
+  --mc4: #2d1600;
+  --mc5: #2d1600;
+  --mc6: #7e5637;
+  --mc7: #8d4f00;
+  --mc8: #fae3d1;
+  --mc9: #f7d4ba;
+  --mc10: #ffb876;
+  --mc11: #2d1600;
+  --mc12: #2d1600;
+  --mc13: #2d1600;
+  --mc14: #8d4f00;
+  --mc15: #7e5637;
+  --mc16: #e9bf8e;
+  --mc17: #e9bf8e;
+  --mc18: #e9bf8e;
+  --mc19: #8d4f00;
+  --mc20: #d57a00;
+  --mc21: #ffffff;
+  --mc22: rgba(0, 0, 0, 0.6);
+  --mc23: #ffffff;
+  --mc24: #a9eefa;
+  --mc25: #ffd5d2;
+  --mc26: #ffb876;
+  --mc27: #4b2700;
+  --mc28: #ffeee1;
+}
+
+.dark-mode.brown {
+  --mc1: #1f1f1f;
+  --mc2: #392e25;
+  --mc2t: 57, 46, 37;
+  --mc3: #4a3c30;
+  --mc4: #ffeee1;
+  --mc5: #ffeee1;
+  --mc6: #dcc2ad;
+  --mc7: #ffb876;
+  --mc8: #392e25;
+  --mc9: #4a3c30;
+  --mc10: #6b3b05;
+  --mc11: #ffeee1;
+  --mc12: #ffeee1;
+  --mc13: #ffeee1;
+  --mc14: #ffb876;
+  --mc15: #dcc2ad;
+  --mc16: #6f5b4a;
+  --mc17: #6f5b4a;
+  --mc18: #6f5b4a;
+  --mc19: #ffb876;
+  --mc20: #ffb876;
+  --mc21: #1f1f1f;
+  --mc22: rgba(0, 0, 0, 0.6);
+  --mc23: #ffffff;
+  --mc24: #a9eefa;
+  --mc25: #ffd5d2;
+  --mc26: #ffb876;
+  --mc27: #4b2700;
+  --mc28: #392e25;
+  color-scheme: dark;
+}
+
+.light-mode.dark-blue {
+  --mc1: #ffffff;
+  --mc2: #f0f0fa;
+  --mc2t: 240, 240, 250;
+  --mc3: #dfe2f2;
+  --mc4: #001946;
+  --mc5: #001946;
+  --mc6: #434465;
+  --mc7: #0057ce;
+  --mc8: #dfe2f2;
+  --mc9: #ccd1ea;
+  --mc10: #b1c5ff;
+  --mc11: #001946;
+  --mc12: #001946;
+  --mc13: #001946;
+  --mc14: #0057ce;
+  --mc15: #434465;
+  --mc16: #b1c5ff;
+  --mc17: #b1c5ff;
+  --mc18: #b1c5ff;
+  --mc19: #0057ce;
+  --mc20: #076eff;
+  --mc21: #ffffff;
+  --mc22: rgba(0, 0, 0, 0.6);
+  --mc23: #ffffff;
+  --mc24: #ffddb7;
+  --mc25: #b1c5ff;
+  --mc26: #4fabff;
+  --mc27: #002c70;
+  --mc28: #eef0ff;
+}
+
+.dark-mode.dark-blue {
+  --mc1: #1f1f1f;
+  --mc2: #2e3038;
+  --mc2t: 45, 49, 55;
+  --mc3: #3c3e49;
+  --mc4: #eef0ff;
+  --mc5: #eef0ff;
+  --mc6: #c3c6d6;
+  --mc7: #b1c5ff;
+  --mc8: #2e3038;
+  --mc9: #3c3e49;
+  --mc10: #304578;
+  --mc11: #eef0ff;
+  --mc12: #eef0ff;
+  --mc13: #eef0ff;
+  --mc14: #b1c5ff;
+  --mc15: #b3b6c4;
+  --mc16: #5a5e6c;
+  --mc17: #5a5e6c;
+  --mc18: #5a5e6c;
+  --mc19: #b1c5ff;
+  --mc20: #b1c5ff;
+  --mc21: #1f1f1f;
+  --mc22: rgba(0, 0, 0, 0.6);
+  --mc23: #ffffff;
+  --mc24: #ffddb7;
+  --mc25: #b1c5ff;
+  --mc26: #4fabff;
+  --mc27: #002c70;
+  --mc28: #2e3038;
+  color-scheme: dark;
+}
+
+.light-mode.dark-green {
+  --mc1: #ffffff;
+  --mc2: #f3f4ee;
+  --mc2t: 243, 244, 238;
+  --mc3: #dde5d9;
+  --mc4: #002108;
+  --mc5: #002108;
+  --mc6: #284e3c;
+  --mc7: #00531f;
+  --mc8: #dde5d9;
+  --mc9: #cedac8;
+  --mc10: #a2d892;
+  --mc11: #002108;
+  --mc12: #002108;
+  --mc13: #002108;
+  --mc14: #00531f;
+  --mc15: #284e3c;
+  --mc16: #a6d0b8;
+  --mc17: #a6d0b8;
+  --mc18: #a6d0b8;
+  --mc19: #006e2c;
+  --mc20: #00a747;
+  --mc21: #ffffff;
+  --mc22: rgba(0, 0, 0, 0.6);
+  --mc23: #ffffff;
+  --mc24: #fea9ff;
+  --mc25: #affaff;
+  --mc26: #42c279;
+  --mc27: #003913;
+  --mc28: #e7f5e3;
+}
+
+.dark-mode.dark-green {
+  --mc1: #1f1f1f;
+  --mc2: #2b322b;
+  --mc2t: 43, 50, 43;
+  --mc3: #3d473d;
+  --mc4: #f4fff6;
+  --mc5: #f4fff6;
+  --mc6: #bdcaba;
+  --mc7: #719984;
+  --mc8: #2b322b;
+  --mc9: #3d473d;
+  --mc10: #1d5128;
+  --mc11: #f4fff6;
+  --mc12: #f4fff6;
+  --mc13: #f4fff6;
+  --mc14: #719984;
+  --mc15: #bdcaba;
+  --mc16: #51625d;
+  --mc17: #51625d;
+  --mc18: #51625d;
+  --mc19: #719984;
+  --mc20: #719984;
+  --mc21: #1f1f1f;
+  --mc22: rgba(0, 0, 0, 0.6);
+  --mc23: #ffffff;
+  --mc24: #fea9ff;
+  --mc25: #affaff;
+  --mc26: #42c279;
+  --mc27: #003913;
+  --mc28: #2b322b;
+  color-scheme: dark;
+}
+
+.light-mode.green {
+  --mc1: #ffffff;
+  --mc2: #f2f4f2;
+  --mc2t: 242, 244, 242;
+  --mc3: #dbe5e0;
+  --mc4: #00201a;
+  --mc5: #00201a;
+  --mc6: #386665;
+  --mc7: #006b5b;
+  --mc8: #dbe5e0;
+  --mc9: #cad9d1;
+  --mc10: #8dd8bc;
+  --mc11: #00201a;
+  --mc12: #00201a;
+  --mc13: #00201a;
+  --mc14: #006b5b;
+  --mc15: #386665;
+  --mc16: #a0cfce;
+  --mc17: #a0cfce;
+  --mc18: #a0cfce;
+  --mc19: #008673;
+  --mc20: #00a38c;
+  --mc21: #ffffff;
+  --mc22: rgba(0, 0, 0, 0.6);
+  --mc23: #ffffff;
+  --mc24: #ffafd6;
+  --mc25: #a0cfce;
+  --mc26: #0ad6d6;
+  --mc27: #00382f;
+  --mc28: #e2f5ee;
+}
+
+.dark-mode.green {
+  --mc1: #1f1f1f;
+  --mc2: #293230;
+  --mc2t: 41, 50, 48;
+  --mc3: #3c4946;
+  --mc4: #f1fffe;
+  --mc5: #f1fffe;
+  --mc6: #b8cbc4;
+  --mc7: #85b4b2;
+  --mc8: #293230;
+  --mc9: #3c4946;
+  --mc10: #005144;
+  --mc11: #f1fffe;
+  --mc12: #f1fffe;
+  --mc13: #f1fffe;
+  --mc14: #85b4b2;
+  --mc15: #b8cbc4;
+  --mc16: #51625d;
+  --mc17: #51625d;
+  --mc18: #51625d;
+  --mc19: #85b4b2;
+  --mc20: #85b4b2;
+  --mc21: #1f1f1f;
+  --mc22: rgba(0, 0, 0, 0.6);
+  --mc23: #ffffff;
+  --mc24: #ffafd6;
+  --mc25: #a0cfce;
+  --mc26: #0ad6d6;
+  --mc27: #00382f;
+  --mc28: #293230;
+  color-scheme: dark;
+}
+
+.light-mode.indigo {
+  --mc1: #ffffff;
+  --mc2: #f3effa;
+  --mc2t: 243, 239, 250;
+  --mc3: #e4e0f2;
+  --mc4: #211634;
+  --mc5: #211634;
+  --mc6: #66587b;
+  --mc7: #4f33ff;
+  --mc8: #e4e0f2;
+  --mc9: #d3cdea;
+  --mc10: #c5c0ff;
+  --mc11: #211634;
+  --mc12: #211634;
+  --mc13: #211634;
+  --mc14: darkblue;
+  --mc15: #66587b;
+  --mc16: #c5c0ff;
+  --mc17: #c5c0ff;
+  --mc18: #c5c0ff;
+  --mc19: #3600e1;
+  --mc20: #4f33ff;
+  --mc21: #ffffff;
+  --mc22: rgba(0, 0, 0, 0.6);
+  --mc23: #ffffff;
+  --mc24: #fff1b9;
+  --mc25: #c5c0ff;
+  --mc26: #7c99ff;
+  --mc27: #2400a2;
+  --mc28: #f3eeff;
+  --mc29: #c5c0ff;
+}
+
+.dark-mode.indigo {
+  --mc1: #1f1f1f;
+  --mc2: #312f38;
+  --mc2t: 49, 47, 56;
+  --mc3: #3f3d48;
+  --mc4: #f3eeff;
+  --mc5: #f3eeff;
+  --mc6: #c8c4d6;
+  --mc7: #c5c0ff;
+  --mc8: #312f38;
+  --mc9: #3f3d48;
+  --mc10: #454077;
+  --mc11: #f3eeff;
+  --mc12: #f3eeff;
+  --mc13: #f3eeff;
+  --mc14: #c5c0ff;
+  --mc15: #c8c4d6;
+  --mc16: #5f5d6c;
+  --mc17: #5f5d6c;
+  --mc18: #5f5d6c;
+  --mc19: #c5c0ff;
+  --mc20: #c5c0ff;
+  --mc21: #1f1f1f;
+  --mc22: rgba(0, 0, 0, 0.6);
+  --mc23: #ffffff;
+  --mc24: #fff1b9;
+  --mc25: #c5c0ff;
+  --mc26: #7c99ff;
+  --mc27: #2400a2;
+  --mc28: #302f3d;
+  --mc29: #5f5d6c;
+  color-scheme: dark;
+}
+
+.light-mode.orange {
+  --mc1: #ffffff;
+  --mc2: #fef1ed;
+  --mc2t: 254, 241, 237;
+  --mc3: #fddccf;
+  --mc4: #360f00;
+  --mc5: #360f00;
+  --mc6: #7e5637;
+  --mc7: #a53d00;
+  --mc8: #fddccf;
+  --mc9: #fcc9b6;
+  --mc10: #ffb597;
+  --mc11: #360f00;
+  --mc12: #360f00;
+  --mc13: #360f00;
+  --mc14: #a53d00;
+  --mc15: #7e5637;
+  --mc16: #f0bc96;
+  --mc17: #f0bc96;
+  --mc18: #f0bc96;
+  --mc19: #cd4e00;
+  --mc20: #f85f00;
+  --mc21: #ffffff;
+  --mc22: rgba(0, 0, 0, 0.6);
+  --mc23: #ffffff;
+  --mc24: #c9faf8;
+  --mc25: #fcc9b6;
+  --mc26: #ff9f76;
+  --mc27: #591d00;
+  --mc28: #ffede7;
+}
+
+.dark-mode.orange {
+  --mc1: #1f1f1f;
+  --mc2: #3b2d28;
+  --mc2t: 59, 45, 40;
+  --mc3: #4c3a34;
+  --mc4: #ffede9;
+  --mc5: #ffede9;
+  --mc6: #dfc0b4;
+  --mc7: #ffb597;
+  --mc8: #3b2d28;
+  --mc9: #4c3a34;
+  --mc10: #71361d;
+  --mc11: #ffede9;
+  --mc12: #ffede9;
+  --mc13: #ffede9;
+  --mc14: #ffb597;
+  --mc15: #dfc0b4;
+  --mc16: #715950;
+  --mc17: #715950;
+  --mc18: #715950;
+  --mc19: #ffb597;
+  --mc20: #ffb597;
+  --mc21: #1f1f1f;
+  --mc22: rgba(0, 0, 0, 0.6);
+  --mc23: #ffffff;
+  --mc24: #c9faf8;
+  --mc25: #fcc9b6;
+  --mc26: #ff9f76;
+  --mc27: #591d00;
+  --mc28: #3b2d28;
+  color-scheme: dark;
+}
+
+.light-mode.pink-red {
+  --mc1: #ffffff;
+  --mc2: #fcf1f3;
+  --mc2t: 252, 241, 243;
+  --mc3: #f8dde2;
+  --mc4: #31101b;
+  --mc5: #31101b;
+  --mc6: #7e525e;
+  --mc7: #b4007f;
+  --mc8: #f8dde2;
+  --mc9: #f4c8d0;
+  --mc10: #fcbcdb;
+  --mc11: #31101b;
+  --mc12: #31101b;
+  --mc13: #31101b;
+  --mc14: #b4007f;
+  --mc15: #7e525e;
+  --mc16: #f0b7c5;
+  --mc17: #f0b7c5;
+  --mc18: #f0b7c5;
+  --mc19: #b4007f;
+  --mc20: #e0009f;
+  --mc21: #ffffff;
+  --mc22: rgba(0, 0, 0, 0.6);
+  --mc23: #ffffff;
+  --mc24: #c6ffc7;
+  --mc25: #fcbcdb;
+  --mc26: #ff2f3b;
+  --mc27: #620043;
+  --mc28: #ffecf2;
+}
+
+.dark-mode.pink-red {
+  --mc1: #1f1f1f;
+  --mc2: #3b2c33;
+  --mc2t: 59, 44, 51;
+  --mc3: #4c3942;
+  --mc4: #ffecf2;
+  --mc5: #ffecf2;
+  --mc6: #dac0ca;
+  --mc7: #ffafd6;
+  --mc8: #3b2c33;
+  --mc9: #4c3942;
+  --mc10: #6c3353;
+  --mc11: #ffecf2;
+  --mc12: #ffecf2;
+  --mc13: #ffecf2;
+  --mc14: #ffafd6;
+  --mc15: #dac0ca;
+  --mc16: #6d5962;
+  --mc17: #6d5962;
+  --mc18: #6d5962;
+  --mc19: #ffafd6;
+  --mc20: #ffafd6;
+  --mc21: #1f1f1f;
+  --mc22: rgba(0, 0, 0, 0.6);
+  --mc23: #ffffff;
+  --mc24: #c6ffc7;
+  --mc25: #fcbcdb;
+  --mc26: #ff2f3b;
+  --mc27: #620043;
+  --mc28: #3c2c3;
+  color-scheme: dark;
+}
+
+.light-mode.purple {
+  --mc1: #ffffff;
+  --mc2: #faf1f5;
+  --mc2t: 250, 241, 245;
+  --mc3: #f1ddec;
+  --mc4: #2e1126;
+  --mc5: #2e1126;
+  --mc6: #78536b;
+  --mc7: #a400b6;
+  --mc8: #f1ddec;
+  --mc9: #eacce3;
+  --mc10: #ffadeb;
+  --mc11: #2e1126;
+  --mc12: #2e1126;
+  --mc13: #2e1126;
+  --mc14: #a400b6;
+  --mc15: #78536b;
+  --mc16: #e7b9d5;
+  --mc17: #e7b9d5;
+  --mc18: #e7b9d5;
+  --mc19: #7d008b;
+  --mc20: #a400b6;
+  --mc21: #ffffff;
+  --mc22: rgba(0, 0, 0, 0.6);
+  --mc23: #ffffff;
+  --mc24: #ebf8ad;
+  --mc25: #e7b9d5;
+  --mc26: #ff4fc3;
+  --mc27: #580063;
+  --mc28: #ffebfa;
+  --mc29: #e7b9d5;
+}
+
+.dark-mode.purple {
+  --mc1: #1f1f1f;
+  --mc2: #362e35;
+  --mc2t: 54, 46, 53;
+  --mc3: #483d46;
+  --mc4: #ffebfa;
+  --mc5: #ffebfa;
+  --mc6: #d4c1d0;
+  --mc7: #fea9ff;
+  --mc8: #362e35;
+  --mc9: #483d46;
+  --mc10: #633664;
+  --mc11: #ffebfa;
+  --mc12: #ffebfa;
+  --mc13: #ffebfa;
+  --mc14: #fea9ff;
+  --mc15: #d4c1d0;
+  --mc16: #695a67;
+  --mc17: #695a67;
+  --mc18: #695a67;
+  --mc19: #fea9ff;
+  --mc20: #fea9ff;
+  --mc21: #1f1f1f;
+  --mc22: rgba(0, 0, 0, 0.6);
+  --mc23: #ffffff;
+  --mc24: #ebf8ad;
+  --mc25: #e7b9d5;
+  --mc26: #ff4fc3;
+  --mc27: #580063;
+  --mc28: #362e35;
+  --mc29: #695a67;
+  color-scheme: dark;
+}
+
+.light-mode.red {
+  --mc1: #ffffff;
+  --mc2: #fef1ee;
+  --mc2t: 254, 241, 238;
+  --mc3: #fddbd4;
+  --mc4: #3e0500;
+  --mc5: #3e0500;
+  --mc6: #7f543b;
+  --mc7: #b82100;
+  --mc8: #fddbd4;
+  --mc9: #fcc6bb;
+  --mc10: #f3ba9b;
+  --mc11: #3e0500;
+  --mc12: #3e0500;
+  --mc13: #3e0500;
+  --mc14: #b82100;
+  --mc15: #7f543b;
+  --mc16: #f3ba9b;
+  --mc17: #f3ba9b;
+  --mc18: #f3ba9b;
+  --mc19: #b82100;
+  --mc20: #e52c00;
+  --mc21: #ffffff;
+  --mc22: rgba(0, 0, 0, 0.6);
+  --mc23: #ffffff;
+  --mc24: #d0fbe2;
+  --mc25: #fcc6bb;
+  --mc26: #ff7676;
+  --mc27: #640e00;
+  --mc28: #ffede9;
+}
+
+.dark-mode.red {
+  --mc1: #1f1f1f;
+  --mc2: #3b2d2a;
+  --mc2t: 59, 45, 42;
+  --mc3: #4d3b37;
+  --mc4: #ffede9;
+  --mc5: #ffede9;
+  --mc6: #e0bfb9;
+  --mc7: #ffb4a4;
+  --mc8: #3b2d2a;
+  --mc9: #4d3b37;
+  --mc10: #733428;
+  --mc11: #ffede9;
+  --mc12: #ffede9;
+  --mc13: #ffede9;
+  --mc14: #ffb4a4;
+  --mc15: #e0bfb9;
+  --mc16: #715953;
+  --mc17: #715953;
+  --mc18: #715953;
+  --mc19: #ffb4a4;
+  --mc20: #ffb4a4;
+  --mc21: #1f1f1f;
+  --mc22: rgba(0, 0, 0, 0.6);
+  --mc23: #ffffff;
+  --mc24: #d0fbe2;
+  --mc25: #fcc6bb;
+  --mc26: #ff7676;
+  --mc27: #640e00;
+  --mc28: #3b2d2a;
+  color-scheme: dark;
+}
+
+.light-mode.teal {
+  --mc1: #ffffff;
+  --mc2: #e9f2f4;
+  --mc2t: 233, 242, 244;
+  --mc3: #d4e6e9;
+  --mc4: #001f24;
+  --mc5: #001f24;
+  --mc6: #3e6374;
+  --mc7: #006874;
+  --mc8: #d4e6e9;
+  --mc9: #c2dce0;
+  --mc10: #8bd3df;
+  --mc11: #001f24;
+  --mc12: #001f24;
+  --mc13: #001f24;
+  --mc14: #006874;
+  --mc15: #3e6374;
+  --mc16: #a6ccdf;
+  --mc17: #a6ccdf;
+  --mc18: #a6ccdf;
+  --mc19: #008392;
+  --mc20: #00a0b0;
+  --mc21: #ffffff;
+  --mc22: rgba(0, 0, 0, 0.6);
+  --mc23: #ffffff;
+  --mc24: #f9b2ce;
+  --mc25: #a6ccdf;
+  --mc26: #5fbaff;
+  --mc27: #00363d;
+  --mc28: #e2f4f7;
+}
+
+.dark-mode.teal {
+  --mc1: #1f1f1f;
+  --mc2: #293234;
+  --mc2t: 41, 50, 48;
+  --mc3: #3a474a;
+  --mc4: #f6feff;
+  --mc5: #f6feff;
+  --mc6: #b8cacd;
+  --mc7: #8bb1c3;
+  --mc8: #293234;
+  --mc9: #3a474a;
+  --mc10: #004f58;
+  --mc11: #f6feff;
+  --mc12: #f6feff;
+  --mc13: #f6feff;
+  --mc14: #8bb1c3;
+  --mc15: #b8cacd;
+  --mc16: #516164;
+  --mc17: #516164;
+  --mc18: #516164;
+  --mc19: #8bb1c3;
+  --mc20: #8bb1c3;
+  --mc21: #1f1f1f;
+  --mc22: rgba(0, 0, 0, 0.6);
+  --mc23: #ffffff;
+  --mc24: #f9b2ce;
+  --mc25: #a6ccdf;
+  --mc26: #5fbaff;
+  --mc27: #00363d;
+  --mc28: #293234;
+  color-scheme: dark;
+}
+
+.light-mode.violet {
+  --mc1: #ffffff;
+  --mc2: #f7f2f7;
+  --mc2t: 247, 242, 247;
+  --mc3: #e7dff2;
+  --mc4: #251431;
+  --mc5: #251431;
+  --mc6: #6b5778;
+  --mc7: #6d1aff;
+  --mc8: #e7dff2;
+  --mc9: #d9ccea;
+  --mc10: #cfbdff;
+  --mc11: #251431;
+  --mc12: #251431;
+  --mc13: #251431;
+  --mc14: #6d1aff;
+  --mc15: #6b5778;
+  --mc16: #cfbdff;
+  --mc17: #cfbdff;
+  --mc18: #cfbdff;
+  --mc19: #5300cd;
+  --mc20: #6d1aff;
+  --mc21: #ffffff;
+  --mc22: rgba(0, 0, 0, 0.6);
+  --mc23: #ffffff;
+  --mc24: #f6f4b9;
+  --mc25: #cfbdff;
+  --mc26: #965aff;
+  --mc27: #3a0093;
+  --mc28: #f5eeff;
+}
+
+.dark-mode.violet {
+  --mc1: #1f1f1f;
+  --mc2: #322f38;
+  --mc2t: 50, 47, 56;
+  --mc3: #403d48;
+  --mc4: #f5eeff;
+  --mc5: #f5eeff;
+  --mc6: #cbc3d5;
+  --mc7: #cfbdff;
+  --mc8: #322f38;
+  --mc9: #403d48;
+  --mc10: #4c3e76;
+  --mc11: #f5eeff;
+  --mc12: #f5eeff;
+  --mc13: #f5eeff;
+  --mc14: #cfbdff;
+  --mc15: #cbc3d5;
+  --mc16: #615c6b;
+  --mc17: #615c6b;
+  --mc18: #615c6b;
+  --mc19: #cfbdff;
+  --mc20: #cfbdff;
+  --mc21: #1f1f1f;
+  --mc22: rgba(0, 0, 0, 0.6);
+  --mc23: #ffffff;
+  --mc24: #f7f3b9;
+  --mc25: #cfbdff;
+  --mc26: #965aff;
+  --mc27: #3a0093;
+  --mc28: #322e3c;
+  color-scheme: dark;
+}
+
+.light-mode.yellow-brown {
+  --mc1: #ffffff;
+  --mc2: #fdf1ea;
+  --mc2t: 253, 241, 234;
+  --mc3: #f4e2c8;
+  --mc4: #281900;
+  --mc5: #281900;
+  --mc6: #6e5c2e;
+  --mc7: #7e5700;
+  --mc8: #f4e2c8;
+  --mc9: #f0d7b3;
+  --mc10: #ffcd6c;
+  --mc11: #281900;
+  --mc12: #281900;
+  --mc13: #281900;
+  --mc14: #7e5700;
+  --mc15: #6e5c2e;
+  --mc16: #dcc48c;
+  --mc17: #dcc48c;
+  --mc18: #dcc48c;
+  --mc19: #e19f00;
+  --mc20: #ffba33;
+  --mc21: #281900;
+  --mc22: rgba(0, 0, 0, 0.6);
+  --mc23: #ffffff;
+  --mc24: #b6c5f9;
+  --mc25: #ffd5bd;
+  --mc26: #ffcd6c;
+  --mc27: #422c00;
+  --mc28: #ffeed9;
+}
+
+.dark-mode.yellow-brown {
+  --mc1: #1f1f1f;
+  --mc2: #372f24;
+  --mc2t: 55, 47, 36;
+  --mc3: #4a3f30;
+  --mc4: #ffeed9;
+  --mc5: #ffeed9;
+  --mc6: #d6c4aa;
+  --mc7: #dcc48c;
+  --mc8: #372f24;
+  --mc9: #4a3f30;
+  --mc10: #7e5700;
+  --mc11: #ffeed9;
+  --mc12: #ffeed9;
+  --mc13: #ffeed9;
+  --mc14: #dcc48c;
+  --mc15: #d6c4aa;
+  --mc16: #6a5c48;
+  --mc17: #6a5c48;
+  --mc18: #6a5c48;
+  --mc19: #dcc48c;
+  --mc20: #dcc48c;
+  --mc21: #1f1f1f;
+  --mc22: rgba(0, 0, 0, 0.6);
+  --mc23: #ffffff;
+  --mc24: #b6c5f9;
+  --mc25: #ffd5bd;
+  --mc26: #ffcd6c;
+  --mc27: #422c00;
+  --mc28: #372f24;
+  --mc28: #3c2c3;
+  color-scheme: dark;
+}
+
 html,
 body {
   margin: 0;
   overflow: hidden;
+  background-color: var(--mc1);
 }
 
 body {
-  padding: calc(2 * var(--baseFontSize));
-  background: rgb(255, 205, 170);
-  background: linear-gradient(135deg, rgb(255, 205, 170) 0%, rgb(235, 188, 254) 100%);
+  padding: calc(1.25 * var(--spacing));
   height: calc(var(--app-height));
   width: 100vw;
   font-family: "Poppins", sans-serif;
   font-weight: 200;
+  color: var(--primaryText);
 }
 
 html,
@@ -8441,19 +9375,19 @@ body,
   box-sizing: border-box;
 }
 
-:root {
-  --primaryColor: #eb5b8c;
-  --primaryColorLt: #f7b7d3;
-  --secondaryColor: #f08cc5;
-  --secondaryColorLt: #f3bdf8;
-  --tertiaryColor: #ee7f51;
-  --tertiaryColorLt: #ffad72;
-  --primaryText: #362f53;
+body {
+  --primaryColor: var(--mc14);
+  --primaryColorLt: var(--mc2);
+  --secondaryColor: var(--mc5);
+  --secondaryColorLt: var(--mc3);
+  --tertiaryColor: var(--mc10);
+  --tertiaryColorLt: var(--mc3);
+  --primaryText: var(--mc14);
   --lightText: #a2a3b0;
-  --primaryBg: #fff;
-  --secondaryBg: #f5f2f7;
-  --darkBorder: #82808b;
-  --lightBorder: #e9e5ef;
+  --primaryBg: var(--mc2);
+  --secondaryBg: var(--mc3);
+  --darkBorder: var(--mc14);
+  --lightBorder: var(--mc15);
   --baseFontSize: 1rem;
   --spacing: 1em;
 }
@@ -8505,9 +9439,9 @@ body,
 .poppins {
   font-family: "Poppins", sans-serif;
 }
-/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[5].rules[0].oneOf[0].use[2]!./node_modules/resolve-url-loader/index.js??ruleSet[1].rules[5].rules[1].use[0]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[5].rules[1].use[1]!./src/assets/scss/mediaQuery.scss?ngGlobalStyle ***!
-  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/css-loader@6.7.3_webpack@5.76.1/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].rules[0].oneOf[0].use[1]!./node_modules/.pnpm/postcss-loader@7.0.2_postcss@8.4.31_webpack@5.76.1/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].rules[0].oneOf[0].use[2]!./node_modules/.pnpm/resolve-url-loader@5.0.0/node_modules/resolve-url-loader/index.js??ruleSet[1].rules[6].rules[1].use[0]!./node_modules/.pnpm/sass-loader@13.2.0_sass@1.58.1_webpack@5.76.1/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].rules[1].use[1]!./src/assets/scss/mediaQuery.scss?ngGlobalStyle ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 @media only screen and (orientation: portrait) {
   :root {
     --baseFontSize: 0.9rem;
@@ -8520,3 +9454,5 @@ body,
     height: calc(var(--app-height) - 5 * var(--baseFontSize));
   }
 }
+
+/*# sourceMappingURL=styles.css.map*/

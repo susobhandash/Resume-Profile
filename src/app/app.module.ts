@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 // Generic Components
 import { NavBarComponent } from './components/generic/nav-bar/nav-bar.component';
 import { ExpandCollapseComponent } from './components/generic/expand-collapse/expand-collapse.component';
+import { ToggleThemeComponent } from './components/generic/toggle-theme/toggle-theme.component';
 
 // Generic Services
 import { GlobalService } from './services/global.service';
@@ -26,14 +27,11 @@ import { ContactPageComponent } from './components/pages/contact-page/contact-pa
     AboutMePageComponent,
     ProjectsPageComponent,
     SkillsPageComponent,
-    ContactPageComponent
+    ContactPageComponent,
+    ToggleThemeComponent,
   ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, BrowserAnimationsModule, AppRoutingModule],
   providers: [GlobalService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

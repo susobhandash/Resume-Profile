@@ -278,12 +278,12 @@
 }
 
 .left {
-  text-align     : left;
+  text-align: left;
   justify-content: flex-start;
 }
 
 .right {
-  text-align     : right;
+  text-align: right;
   justify-content: flex-end;
 }
 
@@ -310,35 +310,38 @@
 
 // ------------------------------------------------------ Fonts ------------------------------------------------------
 body {
-  font-size          : calc(0.9 * var(--baseFontSize));
-  line-height        : calc(1.25 * var(--baseFontSize));
-  font-family        : 'Poppins', sans-serif;
-  font-style         : normal;
-  font-stretch       : normal;
+  font-size: calc(0.9 * var(--baseFontSize));
+  line-height: calc(1.25 * var(--baseFontSize));
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-stretch: normal;
   font-optical-sizing: none;
 }
 
 h1 {
-  font-size  : calc(2.168 * var(--baseFontSize));
+  font-size: calc(2.168 * var(--baseFontSize));
   line-height: calc(2.168 * var(--baseFontSize));
-  margin     : 0;
+  margin: 0;
   font-weight: 400;
-  font-family: 'gothic', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "gothic", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 h2 {
-  font-size  : calc(1.168 * var(--baseFontSize));
+  font-size: calc(1.168 * var(--baseFontSize));
   line-height: calc(1.168 * var(--baseFontSize));
-  margin     : 0;
+  margin: 0;
   font-weight: 400;
-  font-family: 'gothic', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "gothic", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 h3 {
-  font-size  : var(--baseFontSize);
+  font-size: var(--baseFontSize);
   line-height: var(--baseFontSize);
-  margin     : 0;
-  font-family: 'gothic', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0;
+  font-family: "gothic", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 // ------------------------------------------------------ Colors ------------------------------------------------------
@@ -368,17 +371,17 @@ h3 {
 }
 
 .text-lg {
-  font-size  : calc(1.5 * var(--baseFontSize));
+  font-size: calc(1.5 * var(--baseFontSize));
   line-height: calc(1.6 * var(--baseFontSize));
 }
 
 .text-md {
-  font-size  : calc(0.9 * var(--baseFontSize));
+  font-size: calc(0.9 * var(--baseFontSize));
   line-height: calc(1.25 * var(--baseFontSize));
 }
 
 .text-sm {
-  font-size  : calc(0.8 * var(--baseFontSize));
+  font-size: calc(0.8 * var(--baseFontSize));
   line-height: calc(0.9 * var(--baseFontSize));
 }
 
@@ -393,7 +396,7 @@ a {
 }
 
 *::-webkit-scrollbar {
-  width : 16px;
+  width: 16px;
   height: 16px;
 }
 
@@ -404,8 +407,8 @@ a {
 
 *::-webkit-scrollbar-thumb {
   background-color: #69707d4d;
-  border          : 6px solid transparent;
-  background-clip : content-box;
+  border: 6px solid transparent;
+  background-clip: content-box;
 }
 
 // ------------------------------------------------------ Widths ------------------------------------------------------
@@ -424,4 +427,8 @@ a {
 // ------------------------------------------------------ Overrides ------------------------------------------------------
 ::marker {
   color: var(--primaryColor);
+}
+
+.c-p {
+  cursor: pointer;
 }

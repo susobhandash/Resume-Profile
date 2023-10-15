@@ -1,4 +1,4 @@
-<div class="container p-md">
+<div class="container p-md d-f">
   <ng-container *ngIf="globalService.deviceOrientation === 'landscape'">
     <div class="page-content">
       <div class="left-section p-md pt-lg pb-lg">
@@ -10,24 +10,30 @@
             Principal Engineer, UI
           </div>
           <div class="fw-400 mb-sm text-primary gothic">
-            <a href="https://epssw.com" target="_blank">eProductivity Software</a>
+            <a href="https://epssw.com" target="_blank"
+              >eProductivity Software</a
+            >
           </div>
           <div class="mt-lg">
-            <app-nav-bar [model]="navBarItems" [orientation]="'vertical'" [(activeIdx)]="activeIdx"></app-nav-bar>
+            <app-nav-bar
+              [model]="navBarItems"
+              [orientation]="'vertical'"
+              [(activeIdx)]="activeIdx"
+            ></app-nav-bar>
           </div>
         </div>
         <div class="detail-panel pl-md">
           <router-outlet></router-outlet>
         </div>
       </div>
-      <div class="right-section pl-md">
+      <!-- <div class="right-section pl-md">
         <div class="side-panel p-md">
           <h1 class="text-primary mb-sm">Blog</h1>
           <div class="scroll-section">
             Coming soon...
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </ng-container>
   <ng-container *ngIf="globalService.deviceOrientation === 'portrait'">
@@ -36,7 +42,11 @@
         <router-outlet></router-outlet>
       </div>
       <div class="bottom-nav">
-        <app-nav-bar [model]="navBarItems" [orientation]="'horizontal'" [(activeIdx)]="activeIdx"></app-nav-bar>
+        <app-nav-bar
+          [model]="navBarItems"
+          [orientation]="'horizontal'"
+          [(activeIdx)]="activeIdx"
+        ></app-nav-bar>
       </div>
     </div>
   </ng-container>
